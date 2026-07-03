@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Surpasself Voice | Product</title>
+    <meta name="description" content="Surpasself Voice：本地优先的语音到 Markdown 项目工作台。">
+    <link rel="canonical" href="https://surpasself.github.io/products/surpasself-voice.html">
+    <link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="nav">
+        <a class="brand" href="../index.html"><img src="../assets/mark.svg" alt=""><span>Surpasself</span></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
+        <nav class="nav-links" data-nav-links aria-label="Primary">
+          <a href="../index.html">Home</a>
+          <a href="../projects/">Projects</a>
+          <a class="is-active" href="./surpasself-voice.html">Products</a>
+          <a href="../research/">Research</a>
+          <a href="../datasets/">Datasets</a>
+        </nav>
+        <div class="language-control" aria-label="选择语言">
+          <label for="language-select-product">语言</label>
+          <select id="language-select-product" data-language-select>
+            <option value="zh-CN">简体中文</option>
+            <option value="en" disabled>English · soon</option>
+          </select>
+        </div>
+      </header>
+
+      <main>
+        <section class="section hero">
+          <div class="container hero-grid">
+            <div>
+              <p class="eyebrow">Product detail</p>
+              <h1>Surpasself Voice</h1>
+              <p class="lead">一个本地优先的语音项目工作台：从口述开始，把混乱想法整理成 Markdown、PRD、任务清单和可继续推进的项目文档。</p>
+              <div class="actions">
+                <a class="button primary" href="#">Live app pending</a>
+                <a class="button secondary" href="../projects/">View project card</a>
+              </div>
+            </div>
+            <aside class="hero-card">
+              <span class="status-pill live">MVP ready locally</span>
+              <h3>Core workflow</h3>
+              <p class="muted">手机记录 → 桌面查看 → 本地整理 → Markdown 编辑 → 本地保存 → Agent 读取。</p>
+              <div class="tag-row">
+                <span class="tag">PWA</span>
+                <span class="tag">Markdown</span>
+                <span class="tag">MCP</span>
+                <span class="tag">Local-first</span>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container split-grid">
+            <div>
+              <p class="eyebrow">Problem</p>
+              <h2>人在说话时，想法经常是乱的。</h2>
+            </div>
+            <div class="profile-card">
+              <p>真实口述会包含停顿、语气词、重复、跳跃和临时补充。产品的价值不是简单转文字，而是把口述转成可以继续工作的结构：背景、目标、需求、任务、风险和下一步。</p>
+              <p>第一版先保证本地记录和 Markdown 编辑，后续再把智能整理升级为可选择模型、个人 API Key、云中继和工作流模板。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="architecture">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Architecture</p>
+                <h2>公开页面只讲产品，不公开源码。</h2>
+              </div>
+              <p>GitHub Pages 只承载静态介绍和前端成品；同步、模型调用、OAuth、MCP 等能力需要独立后端或本地伴侣服务。</p>
+            </div>
+            <div class="pillar-grid">
+              <article class="card"><h3>Frontend</h3><p>React + TypeScript/PWA 方向。适合 GitHub Pages 托管静态入口。</p></article>
+              <article class="card"><h3>Local data</h3><p>IndexedDB 和本机 Markdown 镜像。敏感内容优先留在用户设备上。</p></article>
+              <article class="card"><h3>Relay</h3><p>跨设备实时同步需要 HTTPS/WSS 中继，后续可用 Cloudflare Workers 或 Supabase。</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="business">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Business model</p>
+                <h2>收费点压在跨设备、工作流和效率。</h2>
+              </div>
+              <p>基础记录不打扰用户，付费围绕更高频、更省时间、更能沉淀项目的能力。</p>
+            </div>
+            <div class="card-grid">
+              <article class="card"><h3>Free trial</h3><p>基础录音、Markdown 编辑、本地保存，适合快速感知产品价值。</p></article>
+              <article class="card"><h3>30 天创作通行证</h3><p>9.9 元级别试用跨设备同步、工作流模板、导出包和效率增强。</p></article>
+              <article class="card"><h3>Pro later</h3><p>高级模型、团队空间、云备份、多项目知识库和自动发布。</p></article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner"><span>© <span data-year></span> Surpasself</span><a href="../index.html">Back home</a></div>
+      </footer>
+    </div>
+    <script src="../assets/main.js"></script>
+  </body>
+</html>
