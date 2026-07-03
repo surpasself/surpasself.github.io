@@ -20,6 +20,7 @@
           <a class="is-active" href="./surpasself-voice.html">Products</a>
           <a href="../research/">Research</a>
           <a href="../datasets/">Datasets</a>
+          <a href="../blog/">Blog</a>
         </nav>
         <div class="language-control" aria-label="选择语言">
           <label for="language-select-product">语言</label>
@@ -38,7 +39,7 @@
               <h1>Surpasself Voice</h1>
               <p class="lead">一个本地优先的语音项目工作台：从口述开始，把混乱想法整理成 Markdown、PRD、任务清单和可继续推进的项目文档。</p>
               <div class="actions">
-                <a class="button primary" href="#">Live app pending</a>
+                <a class="button primary" href="../voice/">打开在线版本</a>
                 <a class="button secondary" href="../projects/">View project card</a>
               </div>
             </div>
@@ -76,12 +77,15 @@
                 <p class="eyebrow">Architecture</p>
                 <h2>公开页面只讲产品，不公开源码。</h2>
               </div>
-              <p>GitHub Pages 只承载静态介绍和前端成品；同步、模型调用、OAuth、MCP 等能力需要独立后端或本地伴侣服务。</p>
+              <p>GitHub Pages 只承载静态介绍和浏览器前端成品；同步、模型调用、OAuth、MCP 等能力需要独立后端或本地伴侣服务。</p>
             </div>
             <div class="pillar-grid">
-              <article class="card"><h3>Frontend</h3><p>React + TypeScript/PWA 方向。适合 GitHub Pages 托管静态入口。</p></article>
+              <article class="card"><h3>Frontend</h3><p>React + TypeScript/PWA 方向。GitHub Pages 版本可直接打开、录音、编辑和本地保存。</p></article>
               <article class="card"><h3>Local data</h3><p>IndexedDB 和本机 Markdown 镜像。敏感内容优先留在用户设备上。</p></article>
-              <article class="card"><h3>Relay</h3><p>跨设备实时同步需要 HTTPS/WSS 中继，后续可用 Cloudflare Workers 或 Supabase。</p></article>
+              <article class="card"><h3>Relay</h3><p>跨设备实时同步、手机扫码、MCP 写入需要 HTTPS/WSS 中继，后续可用 Cloudflare Workers 或 Supabase。</p></article>
+            </div>
+            <div class="notice-box top-gap">
+              <p class="muted">重要边界：公开网页版本会暴露前端打包后的浏览器代码，这是所有静态 Web App 的正常限制；MCP、本地数据、私有文档、密钥和后端能力不会放入公开 Pages 仓库。</p>
             </div>
           </div>
         </section>

@@ -25,6 +25,32 @@ Recommended local staging folder outside this source project:
 5. Commit and push from the staging folder, not from this source project.
 6. Verify `https://surpasself.github.io/`.
 
+When you see “homepage/ 覆盖到临时 Pages 仓库”, it means:
+
+- A separate clone of `surpasself/surpasself.github.io` was created outside the source project.
+- Files in that temporary clone were replaced by the reviewed static files from `homepage/`.
+- The source folders `app/`, `mcp-server/`, `.git/`, local data, secrets, and drafts were not copied.
+- The temporary clone is the only place that should be committed and pushed to the public Pages repository.
+
+## Blog Publishing Flow
+
+1. Draft an article with `admin/blog-publisher.html` or any Markdown editor.
+2. Save the `.md` file into `homepage/content/posts/`.
+3. Run `node homepage/scripts/build-blog.mjs` from the project root, or `node scripts/build-blog.mjs` from inside `homepage/`.
+4. Preview `homepage/blog/`.
+5. Publish the reviewed static output through the separate Pages staging folder.
+
+Do not place private drafts, school-restricted data, keys, or unpublished notes into `content/posts/`.
+
+## Voice Publishing Flow
+
+1. Build the app with the public base path `/voice/`.
+2. Copy only the compiled `dist` output into `homepage/voice/`.
+3. Confirm `homepage/voice/index.html` opens in local preview.
+4. Publish only the `homepage/` static output through the Pages staging folder.
+
+The public web version necessarily exposes browser JavaScript bundles. Keep private logic, data, MCP services, and credentials outside the public output.
+
 ## Files That Should Not Be Published
 
 - `../app/`
@@ -33,6 +59,7 @@ Recommended local staging folder outside this source project:
 - `../.git/`
 - `.env`
 - unpublished datasets
+- private article drafts
 - API keys or account tokens
 - private school lab notes
 
