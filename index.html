@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Surpasself | Products, Projects, Research</title>
-    <meta name="description" content="Surpasself 的个人主页：产品、项目、学术实验、公开数据集与写作入口。">
+    <title>Surpasself Voice</title>
+    <meta name="description" content="Surpasself Voice：本地优先的语音转 Markdown 工作台。">
     <link rel="canonical" href="https://surpasself.github.io/">
     <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./assets/styles.css">
@@ -12,52 +12,50 @@
   <body>
     <div class="site-shell">
       <header class="nav">
-        <a class="brand" href="./index.html" aria-label="Surpasself home">
+        <a class="brand" href="./index.html" aria-label="Surpasself Voice home">
           <img src="./assets/mark.svg" alt="">
-          <span>Surpasself</span>
+          <span>Surpasself Voice</span>
         </a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
-        <nav class="nav-links" data-nav-links aria-label="Primary">
-          <a class="is-active" href="./index.html">Home</a>
-          <a href="./projects/">Projects</a>
-          <a href="./products/surpasself-voice.html">Products</a>
-          <a href="./research/">Research</a>
-          <a href="./datasets/">Datasets</a>
-          <a href="#contact">Contact</a>
+        <nav class="nav-links minimal" data-nav-links aria-label="Primary">
+          <a class="is-active" href="./index.html" data-i18n="nav.home">Home</a>
+          <a href="./voice/" data-i18n="nav.open">Open Voice</a>
         </nav>
-        <div class="language-control" aria-label="选择语言">
-          <label for="language-select-home">语言</label>
-          <select id="language-select-home" data-language-select>
-            <option value="zh-CN">简体中文</option>
-            <option value="en" disabled>English · soon</option>
-          </select>
+        <div class="nav-controls">
+          <button class="theme-toggle" type="button" data-theme-toggle data-i18n="theme.toggle">夜间</button>
+          <div class="language-control" aria-label="选择语言">
+            <label for="language-select-home" data-i18n="language.label">语言</label>
+            <select id="language-select-home" data-language-select>
+              <option value="zh-CN">简体中文</option>
+              <option value="en">English</option>
+            </select>
+          </div>
         </div>
       </header>
 
       <main>
-        <section class="section hero">
+        <section class="section hero product-landing">
           <div class="container hero-grid">
             <div>
-              <p class="eyebrow">Personal lab for building and research</p>
-              <h1>把想法做成产品，把实验沉淀成公开资产。</h1>
-              <p class="lead">
-                这里会集中展示 Surpasself 的成熟项目、AI 工具、学校实验数据集、研究笔记和可复用代码。主页既服务产品访问，也服务学术公开与长期作品集。
+              <p class="eyebrow" data-i18n="hero.eyebrow">Local-first voice workspace</p>
+              <h1 class="product-title">Surpasself Voice</h1>
+              <p class="lead" data-i18n="hero.lead">
+                从空白开始录音、转写、整理成 Markdown。内容优先留在本地，适合把临时想法变成可以继续推进的文档。
               </p>
               <div class="actions">
-                <a class="button primary" href="./products/surpasself-voice.html">查看首个产品</a>
-                <a class="button secondary" href="./datasets/">公开数据集入口</a>
-                <a class="button secondary" href="./projects/">浏览项目</a>
+                <a class="button primary" href="./voice/" data-i18n="hero.primary">打开 Voice</a>
+                <a class="button secondary" href="#focus" data-i18n="hero.secondary">查看当前版本</a>
               </div>
             </div>
 
-            <aside class="hero-card" aria-label="Featured product">
+            <aside class="hero-card voice-landing-card" aria-label="Surpasself Voice preview">
               <div class="hero-card-top">
-                <span class="status-pill live">Live framework</span>
-                <span class="tag">AI workflow</span>
+                <span class="status-pill live" data-i18n="card.status">可本地使用</span>
+                <span class="tag" data-i18n="card.tag">PWA</span>
               </div>
               <div class="product-preview">
-                <h3>Surpasself Voice</h3>
-                <p>从口述开始，把需求整理成 Markdown、项目文档和可继续工作的任务。</p>
+                <h3>Voice → Markdown</h3>
+                <p data-i18n="card.copy">先记录，再整理；没有默认成型文本，用户说什么就从什么开始。</p>
                 <div class="preview-window" aria-hidden="true">
                   <div class="voice-lines">
                     <span></span>
@@ -66,98 +64,40 @@
                   </div>
                 </div>
               </div>
-              <div class="stats-grid">
-                <div class="metric"><strong>01</strong><span>Product</span></div>
-                <div class="metric"><strong>03</strong><span>Pillars</span></div>
-                <div class="metric"><strong>∞</strong><span>Projects</span></div>
+              <div class="stats-grid compact">
+                <div class="metric"><strong>01</strong><span data-i18n="metric.record">Record</span></div>
+                <div class="metric"><strong>02</strong><span data-i18n="metric.edit">Edit</span></div>
+                <div class="metric"><strong>03</strong><span data-i18n="metric.save">Save</span></div>
               </div>
             </aside>
           </div>
         </section>
 
-        <section class="section">
+        <section class="section compact-section" id="focus">
           <div class="container">
             <div class="section-heading">
               <div>
-                <p class="eyebrow">Site architecture</p>
-                <h2>一个主页，三种可信度。</h2>
+                <p class="eyebrow" data-i18n="flow.eyebrow">Current focus</p>
+                <h2 data-i18n="flow.title">先把 Voice 做稳。</h2>
               </div>
-              <p>产品页面解释“能解决什么问题”，项目页面证明“做过什么”，学术与数据集页面沉淀“可以被引用和复现的资产”。</p>
+              <p data-i18n="flow.copy">Blog、研究、数据集等页面暂时隐藏。现在公开站点只服务一个目标：让 Voice 产品能被直接打开、理解和试用。</p>
             </div>
             <div class="pillar-grid">
               <article class="card">
-                <span class="tag">Products</span>
-                <h3>成熟产品</h3>
-                <p>展示已可使用的工具、下载地址、在线演示、定价机制、隐私边界和路线图。</p>
-                <div class="link-row"><a href="./products/surpasself-voice.html">产品介绍 →</a></div>
+                <span class="tag" data-i18n="step.oneTag">Blank</span>
+                <h3 data-i18n="step.oneTitle">空白开始</h3>
+                <p data-i18n="step.oneCopy">首次打开不再预置项目文档。用户可以直接录音，也可以在转写区手动输入。</p>
               </article>
               <article class="card">
-                <span class="tag">Projects</span>
-                <h3>项目作品集</h3>
-                <p>用标签筛选产品、研究、工具和学校项目，每个项目都有状态、成果和下一步。</p>
-                <div class="link-row"><a href="./projects/">项目列表 →</a></div>
+                <span class="tag" data-i18n="step.twoTag">Markdown</span>
+                <h3 data-i18n="step.twoTitle">按需整理</h3>
+                <p data-i18n="step.twoCopy">只有点击整理后，才把新增口述追加为 Markdown；手动改过的内容不会被自动删掉。</p>
               </article>
               <article class="card">
-                <span class="tag">Research</span>
-                <h3>学术公开</h3>
-                <p>集中放研究方向、实验数据集、代码、论文、活动、协作者和引用格式。</p>
-                <div class="link-row"><a href="./research/">学术页面 →</a></div>
+                <span class="tag" data-i18n="step.threeTag">Local</span>
+                <h3 data-i18n="step.threeTitle">本地优先</h3>
+                <p data-i18n="step.threeCopy">浏览器本地保存是基础能力；跨设备和 MCP 后续作为增强能力继续迭代。</p>
               </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container">
-            <div class="section-heading">
-              <div>
-                <p class="eyebrow">Featured</p>
-                <h2>当前优先展示。</h2>
-              </div>
-              <p>先把能代表你方向的项目放上去，后面每完成一个产品或数据集，只需要补一张卡片。</p>
-            </div>
-            <div class="card-grid">
-              <article class="card">
-                <div class="card-meta"><span class="tag">Product</span><span class="tag">PWA</span></div>
-                <h3>Surpasself Voice</h3>
-                <p>本地优先的语音到 Markdown 工作台，适合把口述需求整理成产品文档、任务清单和项目素材。</p>
-                <div class="link-row"><a href="./products/surpasself-voice.html">Read more</a><a href="#">Live demo soon</a></div>
-              </article>
-              <article class="card">
-                <div class="card-meta"><span class="tag">Dataset</span><span class="tag">School lab</span></div>
-                <h3>实验数据集模板</h3>
-                <p>用于公开学校实验数据：包含数据说明、采集方法、许可协议、引用格式和下载地址。</p>
-                <div class="link-row"><a href="./datasets/">Dataset catalog</a></div>
-              </article>
-              <article class="card">
-                <div class="card-meta"><span class="tag">Research</span><span class="tag">Notes</span></div>
-                <h3>研究与写作入口</h3>
-                <p>整理研究兴趣、阅读笔记、公开代码和阶段性成果，让主页逐渐变成长期简历。</p>
-                <div class="link-row"><a href="./research/">Research page</a></div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="contact">
-          <div class="container split-grid">
-            <div>
-              <p class="eyebrow">Contact</p>
-              <h2>合作、试用、引用，都从这里开始。</h2>
-              <p class="lead">后续可以接入邮箱、GitHub、Google Scholar、数据集 DOI、产品下载页和预约链接。</p>
-            </div>
-            <div class="profile-card">
-              <h3>Surpasself</h3>
-              <p>AI product builder / student researcher / dataset maintainer.</p>
-              <div class="tag-row">
-                <span class="tag">GitHub: @surpasself</span>
-                <span class="tag">Location: China</span>
-                <span class="tag">Status: building in public</span>
-              </div>
-              <div class="actions">
-                <a class="button primary" href="https://github.com/surpasself">GitHub</a>
-                <a class="button secondary" href="mailto:your-email@example.com">Email placeholder</a>
-              </div>
             </div>
           </div>
         </section>
@@ -166,7 +106,7 @@
       <footer class="footer">
         <div class="footer-inner">
           <span>© <span data-year></span> Surpasself</span>
-          <span>Products · Projects · Research · Datasets</span>
+          <span data-i18n="footer.copy">Voice product preview</span>
         </div>
       </footer>
     </div>

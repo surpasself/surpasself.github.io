@@ -1,0 +1,11 @@
+{
+  "name": "Surpasself Voice",
+  "short_name": "Voice",
+  "description": "把口述变成可继续工作的 Markdown 项目文档。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "zh-CN"
+}
