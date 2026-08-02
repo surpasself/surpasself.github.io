@@ -1,0 +1,42 @@
+name: Monthly book discovery
+
+on:
+  schedule:
+    - cron: "0 1 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monthly-books
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Discover this month's books
+        run: python -m bookscout --profile config/books_profile.json --output book/data/current.json
+
+      - name: Commit report when quality gate passes
+        run: |
+          if git diff --quiet -- book/data; then
+            echo "No publishable change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add book/data
+          git commit -m "books: publish monthly discovery"
+          git push
