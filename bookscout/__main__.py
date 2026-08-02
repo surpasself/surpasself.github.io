@@ -10,10 +10,42 @@ from .report import build_report, write_report
 from .scoring import rank_candidates
 
 
+def _write_candidate_audit(report: dict, audit_path: Path) -> None:
+    audit_path.parent.mkdir(parents=True, exist_ok=True)
+    if audit_path.exists():
+        try:
+            previous = json.loads(audit_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            previous = {}
+        previous_issue = str(previous.get("issue") or "")
+        if previous_issue and previous_issue != report["issue"]:
+            archive = audit_path.parent / "archive" / f"{previous_issue}-candidates.json"
+            archive.parent.mkdir(parents=True, exist_ok=True)
+            if not archive.exists():
+                archive.write_text(json.dumps(previous, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    audit_path.write_text(
+        json.dumps(
+            {
+                "schema_version": report["schema_version"],
+                "issue": report["issue"],
+                "generated_at": report["generated_at"],
+                "scanned": report["scanned"],
+                "candidates": report["candidates"],
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Discover and rank new books for Surpasself Books")
     parser.add_argument("--profile", default="config/books_profile.json")
     parser.add_argument("--output", default="book/data/current.json")
+    parser.add_argument("--audit-output", help="Write the complete candidate audit even when publication is held")
     parser.add_argument("--today", help="Override date as YYYY-MM-DD for reproducible runs")
     args = parser.parse_args()
 
@@ -22,6 +54,8 @@ def main() -> int:
     candidates = discover(profile, today=today)
     ranked = rank_candidates(candidates, profile, today=today)
     report = build_report(ranked, profile, today=today)
+    if args.audit_output:
+        _write_candidate_audit(report, Path(args.audit_output))
     published = write_report(
         report,
         Path(args.output),

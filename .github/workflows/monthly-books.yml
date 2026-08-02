@@ -27,7 +27,11 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Discover this month's books
-        run: python -m bookscout --profile config/books_profile.json --output book/data/current.json
+        run: >-
+          python -m bookscout
+          --profile config/books_profile.json
+          --output book/data/current.json
+          --audit-output book/data/candidate-audit.json
 
       - name: Commit report when quality gate passes
         run: |

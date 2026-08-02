@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-from dataclasses import asdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -43,6 +42,42 @@ def _book_payload(item: ScoredCandidate) -> dict[str, Any]:
     }
 
 
+def _candidate_reason(item: ScoredCandidate) -> str:
+    book = item.candidate
+    if item.verdict == "recommend":
+        return "通过正式推荐门槛：主题匹配、可信出版、篇幅和内容证据均达到要求。"
+    if item.red_flags:
+        return f"触发内容风险信号：{', '.join(item.red_flags)}。"
+    if not item.matched_themes:
+        return "与当前阅读画像的交叉不足，暂时没有足够个人相关性。"
+    if not item.trusted_publisher:
+        return "出版社或内容来源尚未进入可信白名单，需要更多独立证据。"
+    if book.pages < 180:
+        return f"篇幅信息不足（当前记录为 {book.pages or '未知'} 页），未通过硬门槛。"
+    if len(book.description) < 300:
+        return "可核验的简介、目录或样章信息不足，暂不据此做深度推荐。"
+    if item.verdict == "watch":
+        return "接近门槛，但综合证据或思想增量还不足，进入观察席。"
+    return "综合评分未达到观察门槛，或与既有书单重复度较高。"
+
+
+def _candidate_payload(item: ScoredCandidate) -> dict[str, Any]:
+    book = item.candidate
+    return {
+        "title": book.title,
+        "authors": book.authors,
+        "published": book.published_date,
+        "publisher": book.publisher,
+        "pages": book.pages,
+        "isbn": book.isbn,
+        "score": item.score,
+        "status": item.verdict,
+        "themes": [theme.get("label", theme.get("id", "跨学科")) for theme in item.matched_themes],
+        "reason": _candidate_reason(item),
+        "source_url": book.info_url,
+    }
+
+
 def build_report(ranked: list[ScoredCandidate], profile: dict[str, Any], *, today: date | None = None) -> dict[str, Any]:
     today = today or date.today()
     recommends = [item for item in ranked if item.verdict == "recommend"][: int(profile.get("max_recommendations", 4))]
@@ -58,11 +93,71 @@ def build_report(ranked: list[ScoredCandidate], profile: dict[str, Any], *, toda
         "editor_note": "本期由规则引擎自动初筛。分数代表值得进一步阅读的概率，不是内容真理值。",
         "books": [_book_payload(item) for item in recommends],
         "watchlist": [_book_payload(item) for item in watchlist],
+        "candidates": [_candidate_payload(item) for item in ranked],
         "rejected_summary": {
             "count": len([item for item in ranked if item.verdict == "reject"]),
             "reasons": ["内容简介或页数不足", "缺少可信出版与研究信号", "命中速成、摘要或不可检验承诺"]
         },
     }
+
+
+def write_history_index(output: Path) -> None:
+    archive_dir = output.parent / "archive"
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    reports: dict[str, tuple[dict[str, Any], str, bool]] = {}
+    candidate_urls: dict[str, str] = {}
+
+    for path in sorted(archive_dir.glob("*.json")):
+        if path.name == "index.json":
+            continue
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        issue = str(payload.get("issue") or "")
+        if path.name.endswith("-candidates.json"):
+            if issue:
+                candidate_urls[issue] = f"./data/archive/{path.name}"
+            continue
+        if issue:
+            reports[issue] = (payload, f"./data/archive/{path.name}", False)
+
+    candidate_audit = output.parent / "candidate-audit.json"
+    if candidate_audit.exists():
+        try:
+            audit_payload = json.loads(candidate_audit.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            audit_payload = {}
+        audit_issue = str(audit_payload.get("issue") or "")
+        if audit_issue:
+            candidate_urls[audit_issue] = "./data/candidate-audit.json"
+
+    if output.exists():
+        try:
+            current = json.loads(output.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            current = {}
+        issue = str(current.get("issue") or "")
+        if issue:
+            reports[issue] = (current, "./data/current.json", True)
+
+    issues = []
+    for issue, (payload, url, is_current) in sorted(reports.items(), reverse=True):
+        issues.append(
+            {
+                "issue": issue,
+                "headline": payload.get("headline", issue),
+                "selected_count": payload.get("selected_count", len(payload.get("books") or [])),
+                "url": url,
+                "candidate_url": candidate_urls.get(issue, ""),
+                "current": is_current,
+            }
+        )
+
+    (archive_dir / "index.json").write_text(
+        json.dumps({"schema_version": 1, "issues": issues}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
 
 def write_report(report: dict[str, Any], output: Path, *, minimum_to_publish: int) -> bool:
@@ -89,6 +184,7 @@ def write_report(report: dict[str, Any], output: Path, *, minimum_to_publish: in
             + "\n",
             encoding="utf-8",
         )
+        write_history_index(output)
         return False
 
     if previous and previous.get("issue") != report.get("issue"):
@@ -98,4 +194,5 @@ def write_report(report: dict[str, Any], output: Path, *, minimum_to_publish: in
             archive.write_text(json.dumps(previous, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    write_history_index(output)
     return True

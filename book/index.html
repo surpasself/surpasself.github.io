@@ -45,7 +45,10 @@
             <div class="ticket-number" data-selected-count>—</div>
             <p>本月正式入选</p>
             <dl>
-              <div><dt>扫描</dt><dd><span data-scanned>—</span> 本</dd></div>
+              <div>
+                <dt>扫描</dt>
+                <dd><button class="audit-trigger" type="button" data-candidates-open><span data-scanned>—</span> 本候选 →</button></dd>
+              </div>
               <div><dt>上限</dt><dd>4 本</dd></div>
               <div><dt>原则</dt><dd>宁缺毋滥</dd></div>
             </dl>
@@ -57,7 +60,15 @@
             <p class="eyebrow">THIS MONTH</p>
             <h2 data-headline>正在读取本月书单…</h2>
           </div>
-          <p data-editor-note>排名不按销量，而按思想增量、证据质量和个人匹配度。</p>
+          <div class="issue-side">
+            <label class="history-control">
+              <span>历史推荐</span>
+              <select data-issue-select aria-label="选择历史月报">
+                <option>正在读取…</option>
+              </select>
+            </label>
+            <p data-editor-note>排名不按销量，而按思想增量、证据质量和个人匹配度。</p>
+          </div>
         </section>
 
         <section class="toolbar" aria-label="书目筛选">
@@ -170,13 +181,41 @@
           </dl>
           <div class="book-meta" data-meta></div>
           <div class="book-actions">
-            <div data-sources></div>
-            <button type="button" data-save>＋ 待读</button>
+            <div class="source-actions" data-sources></div>
+            <div class="personal-actions">
+              <button type="button" data-save>＋ 待读</button>
+              <button type="button" data-complete>标记完成</button>
+              <a data-review>写书评 →</a>
+            </div>
           </div>
         </div>
       </article>
     </template>
 
+    <dialog class="candidate-dialog" data-candidate-dialog>
+      <div class="candidate-dialog-shell">
+        <header>
+          <div>
+            <p class="eyebrow">CANDIDATE AUDIT</p>
+            <h2>本月候选审计</h2>
+            <p data-candidate-note>完整保留候选及未入选理由。</p>
+          </div>
+          <button class="dialog-close" type="button" data-candidates-close aria-label="关闭候选清单">关闭</button>
+        </header>
+        <div class="candidate-tools">
+          <input type="search" data-candidate-search placeholder="搜索书名、作者或出版社" aria-label="搜索候选书">
+          <div class="candidate-filters" data-candidate-filters>
+            <button class="is-active" type="button" data-candidate-filter="all">全部 <span data-audit-all>0</span></button>
+            <button type="button" data-candidate-filter="recommend">正式推荐</button>
+            <button type="button" data-candidate-filter="watch">观察</button>
+            <button type="button" data-candidate-filter="reject">未入选</button>
+          </div>
+        </div>
+        <div class="candidate-list" data-candidate-list></div>
+      </div>
+    </dialog>
+
+    <script src="./journal-store.js"></script>
     <script src="./book.js"></script>
   </body>
 </html>
