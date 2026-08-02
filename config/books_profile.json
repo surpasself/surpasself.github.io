@@ -1,0 +1,84 @@
+{
+  "reader": "Surpasself",
+  "language": "en",
+  "max_recommendations": 4,
+  "max_watchlist": 3,
+  "recommend_threshold": 82,
+  "watch_threshold": 70,
+  "minimum_recommendations_to_publish": 2,
+  "publication_window_days": {
+    "past": 150,
+    "future": 60
+  },
+  "queries": [
+    "decision making psychology",
+    "behavioral economics",
+    "political economy democracy",
+    "artificial intelligence society",
+    "systems thinking complexity",
+    "philosophy meaning life",
+    "relationships attachment boundaries",
+    "learning science",
+    "culture sociology memoir",
+    "self efficacy personal change"
+  ],
+  "themes": [
+    {
+      "id": "mind",
+      "label": "心理与自我改变",
+      "weight": 1.0,
+      "keywords": ["psychology", "behavior", "cognition", "decision", "emotion", "identity", "habit", "attention", "therapy", "self-compassion", "procrastination"],
+      "connection": "连接《学会慢思考》、偏见、行为、允许一切发生与显化兴趣，但要求给出可检验的心理机制。"
+    },
+    {
+      "id": "power",
+      "label": "权力、经济与政治",
+      "weight": 1.0,
+      "keywords": ["economics", "economy", "power", "politics", "democracy", "government", "institution", "trump", "inequality", "capitalism", "geopolitics"],
+      "connection": "连接经济学、文化的重要作用、特朗普、理商与复杂经济学，偏好解释制度如何塑造个人命运。"
+    },
+    {
+      "id": "ai",
+      "label": "AI 与技术社会",
+      "weight": 0.95,
+      "keywords": ["artificial intelligence", " ai ", "machine learning", "chatbot", "algorithm", "software", "technology", "digital", "agent"],
+      "connection": "连接 AI Agents、深度学习、技术的本质与系统性能工程，优先技术史、机制和社会后果。"
+    },
+    {
+      "id": "systems",
+      "label": "系统、学习与复杂性",
+      "weight": 0.9,
+      "keywords": ["system", "complexity", "learning", "education", "community", "constructionism", "network", "feedback", "organization", "culture"],
+      "connection": "连接复杂经济学、主动推理、学习科学与项目实践，偏好能跨场景迁移的系统模型。"
+    },
+    {
+      "id": "meaning",
+      "label": "哲学、存在与关系",
+      "weight": 0.85,
+      "keywords": ["philosophy", "meaning", "life", "existential", "freedom", "love", "relationship", "attachment", "solitude", "mortality", "spiritual"],
+      "connection": "连接《个体的价值与命运》、弗洛姆、心的表达、关系与存在主义阅读。"
+    }
+  ],
+  "trusted_publishers": [
+    "MIT Press", "Harvard", "Oxford", "Cambridge", "Princeton", "Yale",
+    "Penguin", "Dutton", "Viking", "Riverhead", "Random House", "Knopf",
+    "Simon & Schuster", "Scribner", "Harper", "Hachette", "Balance",
+    "Farrar, Straus and Giroux", "Basic Books", "PublicAffairs", "Norton",
+    "Bloomsbury", "Profile Books", "Routledge", "University Press"
+  ],
+  "substance_signals": [
+    "research", "evidence", "study", "studies", "data", "archive", "interview",
+    "history", "case studies", "analysis", "theory", "framework", "mechanism",
+    "documents", "source code", "fieldwork", "decades", "experiment"
+  ],
+  "novelty_signals": [
+    "new theory", "rethink", "challenges", "reveals", "rediscovered", "first comprehensive",
+    "why", "how", "upend", "transformed", "paradigm", "hidden", "overlooked",
+    "unexpected", "counterintuitive", "fundamentally"
+  ],
+  "red_flags": [
+    "summary of", "study guide", "workbook", "journal prompts", "coloring book",
+    "low content", "unofficial", "chatgpt", "instant", "effortless", "guaranteed",
+    "secret formula", "high-frequency thoughts", "universe will", "manifest anything"
+  ]
+}
