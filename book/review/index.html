@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>读书记录 · Surpasself Books</title>
+    <meta name="description" content="记录评分、原文摘录与自己的想法，并生成可分享的摘录图片。">
+    <link rel="icon" href="../../assets/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./review.css">
+  </head>
+  <body>
+    <header class="review-nav">
+      <a class="brand" href="../">
+        <img src="../../assets/mark.svg" alt="">
+        <span>Surpasself Books</span>
+      </a>
+      <nav aria-label="书评页导航">
+        <a href="../">← 返回月报</a>
+        <a href="../../voice/">Voice</a>
+        <button type="button" data-theme-toggle>夜间</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="review-hero">
+        <div>
+          <p class="eyebrow"><span data-issue>—</span> · READING JOURNAL</p>
+          <h1 data-title>正在读取书目…</h1>
+          <p class="authors" data-authors></p>
+        </div>
+        <div class="status-panel">
+          <label>
+            <span>阅读状态</span>
+            <select data-status>
+              <option value="unread">未开始</option>
+              <option value="reading">阅读中</option>
+              <option value="finished">已完成</option>
+            </select>
+          </label>
+          <span class="save-state" data-save-state>已在本机保存</span>
+        </div>
+      </section>
+
+      <aside class="privacy-note">
+        <strong>你的读后感默认是私密的。</strong>
+        <span>内容只保存在当前浏览器，不会上传到公开 GitHub。请定期导出 JSON 备份，换设备后可恢复。</span>
+      </aside>
+
+      <section class="review-summary">
+        <div class="rating-card">
+          <div class="section-label">MY SCORE</div>
+          <div class="rating-number"><strong data-rating-value>未评分</strong><span>/10</span></div>
+          <input type="range" min="0" max="10" step="1" value="0" data-rating aria-label="读后评分，满分 10 分">
+          <div class="rating-scale"><span>不推荐</span><span>改变了我</span></div>
+        </div>
+        <label class="overall-review">
+          <span class="section-label">读后总评</span>
+          <textarea data-review placeholder="它真正改变了我的什么？哪些论点成立，哪些没有？"></textarea>
+        </label>
+      </section>
+
+      <section class="note-composer">
+        <header>
+          <div>
+            <p class="eyebrow">QUOTE + REFLECTION</p>
+            <h2>把原文和你的思想并排留下。</h2>
+          </div>
+          <p>摘录负责保存作者说了什么；自己的内容负责记录你同意、反对、联想到什么，以及下一步如何行动。</p>
+        </header>
+        <form data-entry-form>
+          <label class="quote-field">
+            <span>原文摘录</span>
+            <textarea required data-quote placeholder="粘贴书中的一句话或一段原文…"></textarea>
+          </label>
+          <label class="note-field">
+            <span>自己的内容</span>
+            <textarea data-note placeholder="这句话为什么击中我？我想到什么证据、经历或反例？"></textarea>
+          </label>
+          <label class="location-field">
+            <span>出处位置</span>
+            <input data-location placeholder="例如：第 3 章 / p. 86 / Kindle 位置 1240">
+          </label>
+          <button class="add-entry" type="submit">添加到读书记录</button>
+        </form>
+      </section>
+
+      <section class="entries-section">
+        <div class="entries-heading">
+          <div>
+            <p class="eyebrow">YOUR NOTES</p>
+            <h2>摘录与感想</h2>
+          </div>
+          <span><strong data-entry-count>0</strong> 条</span>
+        </div>
+        <div class="entries-list" data-entries></div>
+      </section>
+
+      <section class="backup-panel">
+        <div>
+          <h2>备份你的私人记录</h2>
+          <p>导出包含所有书的评分、摘录和感想；恢复时会与本机已有记录合并。</p>
+        </div>
+        <div>
+          <button type="button" data-export>导出 JSON</button>
+          <label class="import-button">恢复 JSON<input type="file" accept="application/json,.json" data-import></label>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="share-dialog" data-share-dialog>
+      <div class="share-shell">
+        <header>
+          <div><p class="eyebrow">SHARE QUOTE</p><h2>摘录分享图</h2></div>
+          <button type="button" data-share-close>关闭</button>
+        </header>
+        <canvas width="1080" height="1350" data-share-canvas aria-label="摘录分享图预览"></canvas>
+        <div class="share-actions">
+          <button type="button" data-native-share>分享图片</button>
+          <button type="button" data-download>下载 PNG</button>
+        </div>
+      </div>
+    </dialog>
+
+    <template id="entry-template">
+      <article class="entry-card">
+        <div class="entry-top">
+          <span data-entry-location></span>
+          <time data-entry-date></time>
+        </div>
+        <div class="entry-pair">
+          <blockquote data-entry-quote></blockquote>
+          <div class="personal-note"><span>我的内容</span><p data-entry-note></p></div>
+        </div>
+        <div class="entry-actions">
+          <button type="button" data-share-entry>生成分享图</button>
+          <button type="button" data-delete-entry>删除</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="../journal-store.js"></script>
+    <script src="./review.js"></script>
+  </body>
+</html>
