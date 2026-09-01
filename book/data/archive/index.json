@@ -6,7 +6,7 @@
       "headline": "2026 年 8 月 · 4 本真正值得占用注意力的新书",
       "selected_count": 4,
       "url": "./data/current.json",
-      "candidate_url": "./data/candidate-audit.json",
+      "candidate_url": "./data/archive/2026-08-candidates.json",
       "current": true
     }
   ]
