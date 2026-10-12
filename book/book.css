@@ -128,6 +128,18 @@ h1 em { color: var(--blue); font-style: normal; }
 .reading-list span { display: inline-grid; place-items: center; min-width: 21px; height: 21px; margin-left: 5px; color: #fff; background: var(--forest); border-radius: 999px; }
 
 .books-grid { display: grid; gap: 24px; width: min(1200px, calc(100% - 36px)); margin: 0 auto; padding-bottom: 90px; }
+.book-collection { display: grid; gap: 24px; }
+.book-collection + .book-collection { margin-top: 28px; }
+.book-collection[hidden], .ebook-access[hidden] { display: none; }
+.collection-heading h2 { margin: 0 0 8px; font-size: clamp(24px, 3vw, 34px); }
+.collection-heading p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.ebook-access { margin: 0 0 22px; padding: 18px 20px; background: var(--blue-soft); border: 1px solid var(--line); border-radius: 13px; }
+.ebook-access h4 { margin: 0 0 8px; color: var(--blue); font-size: 14px; }
+.ebook-access p { margin: 0 0 12px; color: var(--muted); font-size: 13px; line-height: 1.75; }
+.ebook-access .ebook-meta { color: var(--soft); font-size: 11px; overflow-wrap: anywhere; }
+.ebook-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.ebook-links .source-link { background: var(--paper); }
+.availability-rule { margin: 26px 0 0; color: #b7c0ba; font-size: 14px; line-height: 1.8; }
 .loading-card { padding: 70px 24px; color: var(--muted); text-align: center; background: var(--paper); border: 1px solid var(--line); border-radius: 24px; }
 .book-card { position: relative; display: grid; grid-template-columns: minmax(170px, 250px) 1fr; gap: clamp(26px, 4vw, 58px); padding: clamp(24px, 4vw, 48px); overflow: hidden; background: var(--paper); border: 1px solid var(--line); border-radius: 28px; box-shadow: 0 8px 30px rgba(35, 33, 24, .05); }
 .book-card[hidden] { display: none; }

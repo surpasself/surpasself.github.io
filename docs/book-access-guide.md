@@ -1,8 +1,20 @@
 # 外文新书合法阅读渠道实操指南
 
-> 核验日期：2026-08-02。价格、地区可用性和 DRM 规则会变化，购买前以结算页为准。
+> 10 月书单核验日期：2026-10-12；下方 8 月渠道为历史记录。价格、地区可用性和 DRM 规则会变化，购买前以结算页为准。
 
 这份指南解决的是“怎样尽快、稳定地读到推荐书”，不是下载站合集。优先级建议是：**开放获取 → 图书馆借阅 → 正版电子书 → 纸书/有声书**。
+
+## 2026 年 10 月：已出版、已确认电子版
+
+近期新书与深度好书共用“已出版 + 正版电子版已核实”的门槛。以下电子书均为英文，已确认发行，不是预订；这不保证你所在地区的账号一定可以结算。
+
+| 分组 | 书 | 已核实电子版 | 实操入口 |
+| --- | --- | --- | --- |
+| 近期新书 | *American Scoundrel*（2026-09-01） | eBook ISBN `9781668031599` | 打开 [Scribner 电子版页面](https://www.simonandschuster.com/books/American-Scoundrel/Kai-Bird/9781668031599)，确认 eBook 后购买或从其零售商入口进入。出版社直购内容使用 Simon & Schuster Books App 阅读。 |
+| 深度好书 | *How Minds Change*（2022-06-21） | 英文 EPUB 3 / Adobe DRM，ISBN `9780593190302` | 打开 [Kobo 电子版](https://www.kobo.com/us/en/ebook/how-minds-change-2)，先点 Preview，再确认自己的商店地区和支付条件；购买后用 Kobo App 或支持的阅读器。可对照 [出版社书目](https://www.penguinrandomhouse.com/books/639563/how-minds-change-by-david-mcraney/)。 |
+| 深度好书 | *Thinking in Systems*（纸书 2008-12-05；电子版 2008-12-03） | 英文 EPUB 3 / Adobe DRM，ISBN `9781603581486` | 打开 [Kobo 电子版](https://www.kobo.com/us/en/ebook/thinking-in-systems-2)，核对版本后购买；也可先免费读作者授权的 [杠杆点文章](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)，文章不是完整电子书。[发行商书目](https://www.penguinrandomhouse.com/books/801035/thinking-in-systems-by-donella-meadows/)同时列出电子版日期。 |
+
+网站每张书卡把“电子版获取”与“质量证据”分别列出。找不到适用于自己的商店版本时，先用电子版 ISBN 在你已有的合法商店或真实图书馆账号检索；不要把纸书链接、样章或预售当成已经可读的全书。*Goodthink* 在 10 月 12 日核验时尚未发行，因此移出本期推荐。
 
 ## 一、2026 年 8 月四本推荐书的可用渠道
 

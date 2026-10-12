@@ -6,9 +6,15 @@
   "recommend_threshold": 82,
   "watch_threshold": 70,
   "minimum_recommendations_to_publish": 2,
+  "reading_policy": {
+    "require_published": true,
+    "require_verified_ebook": true,
+    "recent_window_days": 150,
+    "collections": ["new", "backlist"]
+  },
   "publication_window_days": {
     "past": 150,
-    "future": 60
+    "future": 0
   },
   "queries": [
     "decision making psychology",

@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from .scoring import ScoredCandidate
+from .availability import reading_gate_issues
 
 
 def _book_payload(item: ScoredCandidate) -> dict[str, Any]:
@@ -28,6 +29,7 @@ def _book_payload(item: ScoredCandidate) -> dict[str, Any]:
         "pages": book.pages,
         "isbn": book.isbn,
         "score": item.score,
+        "collection": "new",
         "category": theme.get("label", "跨学科"),
         "theme": theme.get("id", "other"),
         "cover": book.cover_url,
@@ -45,7 +47,7 @@ def _book_payload(item: ScoredCandidate) -> dict[str, Any]:
 def _candidate_reason(item: ScoredCandidate) -> str:
     book = item.candidate
     if item.verdict == "recommend":
-        return "通过正式推荐门槛：主题匹配、可信出版、篇幅和内容证据均达到要求。"
+        return "通过元数据初筛；出版日期、正版电子版与独立证据仍须复核，不能据此直接发布。"
     if item.red_flags:
         return f"触发内容风险信号：{', '.join(item.red_flags)}。"
     if not item.matched_themes:
@@ -71,7 +73,7 @@ def _candidate_payload(item: ScoredCandidate) -> dict[str, Any]:
         "pages": book.pages,
         "isbn": book.isbn,
         "score": item.score,
-        "status": item.verdict,
+        "status": "watch" if item.verdict == "recommend" else item.verdict,
         "themes": [theme.get("label", theme.get("id", "跨学科")) for theme in item.matched_themes],
         "reason": _candidate_reason(item),
         "source_url": book.info_url,
@@ -90,7 +92,8 @@ def build_report(ranked: list[ScoredCandidate], profile: dict[str, Any], *, toda
         "scanned": len(ranked),
         "selected_count": len(recommends),
         "headline": f"{today.year} 年 {today.month} 月 · 宁缺毋滥",
-        "editor_note": "本期由规则引擎自动初筛。分数代表值得进一步阅读的概率，不是内容真理值。",
+        "editor_note": "规则引擎只做元数据初筛。出版日期、正版电子版与独立材料仍须复核，分数不代表全书质量已被验证。",
+        "reading_policy": profile.get("reading_policy") or {},
         "books": [_book_payload(item) for item in recommends],
         "watchlist": [_book_payload(item) for item in watchlist],
         "candidates": [_candidate_payload(item) for item in ranked],
@@ -160,23 +163,32 @@ def write_history_index(output: Path) -> None:
     )
 
 
-def write_report(report: dict[str, Any], output: Path, *, minimum_to_publish: int) -> bool:
+def write_report(report: dict[str, Any], output: Path, *, minimum_to_publish: int, today: date | None = None) -> bool:
+    today = today or date.today()
     output.parent.mkdir(parents=True, exist_ok=True)
     previous: dict[str, Any] | None = None
     if output.exists():
         previous = json.loads(output.read_text(encoding="utf-8"))
 
-    if len(report.get("books") or []) < minimum_to_publish:
+    books = report.get("books") or []
+    policy = report.get("reading_policy") or {}
+    unavailable = [
+        {"title": book.get("title", "未知书目"), "reasons": issues}
+        for book in books
+        if (issues := reading_gate_issues(book, policy, today=today))
+    ]
+    if len(books) < minimum_to_publish or unavailable:
         status_path = output.with_name("last-run.json")
         status_path.write_text(
             json.dumps(
                 {
                     "generated_at": report.get("generated_at"),
-                    "status": "held_by_quality_gate",
+                    "status": "held_by_reading_gate" if unavailable else "held_by_quality_gate",
                     "scanned": report.get("scanned", 0),
-                    "qualified": len(report.get("books") or []),
+                    "qualified": len(books) - len(unavailable),
                     "required": minimum_to_publish,
-                    "message": "本月合格书目不足，已保留上一期，避免为了更新而降低质量。",
+                    "unavailable": unavailable,
+                    "message": "出版或正版电子版核验未完成，已保留上一期。" if unavailable else "本月合格书目不足，已保留上一期，避免为了更新而降低质量。",
                 },
                 ensure_ascii=False,
                 indent=2,

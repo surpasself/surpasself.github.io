@@ -1,6 +1,9 @@
 import json
 import unittest
+from datetime import date
 from pathlib import Path
+
+from bookscout.availability import reading_gate_issues
 
 
 class SiteContractTests(unittest.TestCase):
@@ -12,6 +15,18 @@ class SiteContractTests(unittest.TestCase):
             for field in ("title", "authors", "score", "thesis", "fit", "evidence", "caveat", "sources"):
                 self.assertIn(field, book)
             self.assertGreaterEqual(len(book["sources"]), 2)
+
+    def test_current_picks_are_published_with_verified_ebooks_in_two_collections(self):
+        payload = json.loads(Path("book/data/current.json").read_text(encoding="utf-8"))
+        policy = payload["reading_policy"]
+        self.assertTrue(policy["require_published"])
+        self.assertTrue(policy["require_verified_ebook"])
+        self.assertEqual({book["collection"] for book in payload["books"]}, {"new", "backlist"})
+        verified_on = date.fromisoformat(payload["generated_at"][:10])
+        for book in payload["books"]:
+            self.assertEqual(reading_gate_issues(book, policy, today=verified_on), [], book["title"])
+            if book["collection"] == "new":
+                self.assertLessEqual((verified_on - date.fromisoformat(book["published"])).days, policy["recent_window_days"])
 
     def test_page_assets_exist(self):
         for path in (

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "issue": "2026-10",
-  "generated_at": "2026-10-12T12:27:11Z",
-  "method": "人工核验官方书目、研究论文与独立书评；非自动全网扫描",
-  "scanned": 9,
+  "generated_at": "2026-10-12T14:00:00Z",
+  "method": "人工核验出版与正版电子版可读性，并对照作者材料、研究与独立书评；非自动全网扫描",
+  "scanned": 11,
   "candidates": [
     {
       "title": "Goodthink",
@@ -15,11 +15,11 @@
       "pages": 352,
       "isbn": "9780262054683",
       "score": 88,
-      "status": "recommend",
+      "status": "reject",
       "themes": [
         "集体决策 · 网络科学"
       ],
-      "reason": "主题研究有同行评议实验基础；2026-10-13 尚未发售，成书评测待补。",
+      "reason": "10 月 12 日核验时尚未出版，预订页不能证明现在能读；移出正式推荐，发行与电子版可读性确认后再评估。",
       "source_url": "https://mitpress.mit.edu/9780262054683/goodthink/",
       "origin": "editorial"
     },
@@ -31,16 +31,17 @@
       ],
       "published": "2026-09-01",
       "publisher": "Scribner",
-      "pages": 448,
+      "pages": 528,
       "isbn": "9781668031575",
       "score": 90,
       "status": "recommend",
       "themes": [
-        "权力与政治人物 · 9 月补选"
+        "权力与政治人物"
       ],
-      "reason": "档案采访与多家独立书评支持；作为 9 月漏选的新书补录。",
+      "reason": "9 月已出版，出版社明确列出已发行电子书；档案采访与独立正反书评支持，进入近期新书组。",
       "source_url": "https://www.simonandschuster.com/books/American-Scoundrel/Kai-Bird/9781668031575",
-      "origin": "editorial"
+      "origin": "editorial",
+      "collection": "new"
     },
     {
       "title": "Why Don’t You Understand Me?",
@@ -52,11 +53,11 @@
       "pages": 272,
       "isbn": "9781645023579",
       "score": 77,
-      "status": "watch",
+      "status": "reject",
       "themes": [
         "心理与关系"
       ],
-      "reason": "正式出版尚需两周；目前多为出版社简介和推荐语，缺少独立成书评测与可核对的研究对应关系，先观察。",
+      "reason": "10 月 27 日才发行；目前预售，不符合已出版且可读电子版的硬门槛。",
       "source_url": "https://www.penguinrandomhouse.com/books/827849/why-dont-you-understand-me-by-yael-schonbrun-phd/",
       "origin": "editorial"
     },
@@ -70,11 +71,11 @@
       "pages": 200,
       "isbn": "9783838221182",
       "score": 73,
-      "status": "watch",
+      "status": "reject",
       "themes": [
         "偏好与自我调节"
       ],
-      "reason": "“金发姑娘区间”是已有理论；当前没有足够独立书评或样章来确认新论证的增量，且不能把哥伦比亚大学出版社的发行服务误当其自家学术出版。",
+      "reason": "官方只给出出版月份，无法确认截至核验日是否已发行；也未核实可购买的电子版，暂不入选。",
       "source_url": "https://cup.columbia.edu/book/just-right/9783838221182/",
       "origin": "editorial"
     },
@@ -113,7 +114,7 @@
         "AI",
         "认知"
       ],
-      "reason": "2026 年 10 月的 Pan 平装本容易被误认新书；Basic Books 官方记录原版 2025 年 10 月已上市。值得读，但不符合本月新书标准。",
+      "reason": "原版是 2025 年，仍可参与深度好书筛选；本期独立成书评测与个人思想增量核验不足，未优先于两本深度好书，并非因年份自动淘汰。",
       "source_url": "https://www.hachettebookgroup.com/titles/gaurav-suri/the-emergent-mind/9781541605268/",
       "origin": "editorial"
     },
@@ -132,7 +133,7 @@
         "AI",
         "哲学"
       ],
-      "reason": "电子版 2026 年 7 月已出，纸本排期 2027 年 2 月；不算 10 月新书。大框架目前也缺少独立成书评测。",
+      "reason": "电子版已出，具备候选资格；但专业大框架缺少独立成书评测和足够明确的个人阅读收益，本期不优先。",
       "source_url": "https://link.springer.com/book/9783032284068",
       "origin": "editorial"
     },
@@ -151,7 +152,7 @@
         "认识论",
         "AI"
       ],
-      "reason": "MIT Press 官方上市日为 11 月 3 日，尚未到 10 月；保留作下月重新核验，不提前假作本月出版。",
+      "reason": "11 月 3 日才发行，截至本期核验日不能阅读已发行电子版。",
       "source_url": "https://mitpress.mit.edu/9780262054867/beautiful-particulars/",
       "origin": "editorial"
     },
@@ -170,8 +171,46 @@
         "AI",
         "风险"
       ],
-      "reason": "MIT Press 官方日期是 2027 年 2 月，超出 10 月新书窗口。",
+      "reason": "2027 年 2 月才发行，不符合现在能读的门槛。",
       "source_url": "https://mitpress.mit.edu/9780262057141/boom-or-doom/",
+      "origin": "editorial"
+    },
+    {
+      "title": "How Minds Change",
+      "authors": [
+        "David McRaney"
+      ],
+      "published": "2022-06-21",
+      "publisher": "Portfolio",
+      "pages": 352,
+      "isbn": "9780593190296",
+      "score": 89,
+      "status": "recommend",
+      "collection": "backlist",
+      "themes": [
+        "认知与关系 · 信念改变"
+      ],
+      "reason": "已发行英文 EPUB，出版社与 Kobo 版本信息一致；独立书评及特定对话研究支持进入深度好书组。",
+      "source_url": "https://www.penguinrandomhouse.com/books/639563/how-minds-change-by-david-mcraney/",
+      "origin": "editorial"
+    },
+    {
+      "title": "Thinking in Systems",
+      "authors": [
+        "Donella Meadows"
+      ],
+      "published": "2008-12-05",
+      "publisher": "Chelsea Green Publishing",
+      "pages": 240,
+      "isbn": "9781603580557",
+      "score": 92,
+      "status": "recommend",
+      "collection": "backlist",
+      "themes": [
+        "系统思维 · 改变的杠杆"
+      ],
+      "reason": "已发行英文 EPUB，出版社与 Kobo 版本信息一致；作者原文与独立讨论可查，进入深度好书组。",
+      "source_url": "https://www.chelseagreen.com/product/thinking-in-systems/",
       "origin": "editorial"
     }
   ]

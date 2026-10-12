@@ -1,46 +1,13 @@
 {
   "schema_version": 1,
   "issue": "2026-10",
-  "generated_at": "2026-10-12T12:27:11Z",
+  "generated_at": "2026-10-12T14:00:00Z",
   "status": "editorial-verified",
-  "scanned": 9,
-  "selected_count": 2,
-  "headline": "2026 年 10 月 · 从集体智慧到权力运作",
-  "editor_note": "截至 10 月 12 日，人工核验 9 本候选，正式推荐 2 本。Goodthink 将于 10 月 13 日出版，判断依据为官方书目与相关同行评议研究，尚无成书独立评测；American Scoundrel 是 9 月漏选新书的补录。分数是编辑判断，不是内容已被完整验证的概率。",
+  "scanned": 11,
+  "selected_count": 3,
+  "headline": "2026 年 10 月 · 新书与深度好书，现在就能读",
+  "editor_note": "本期人工核验 11 本，入选 3 本：1 本近期新书、2 本深度好书。两组都必须已出版，并核实至少一个正版电子版渠道。新书按近 150 天首版筛选；深度好书不限年份，以思想增量和与你的匹配度为准。核验截至 10 月 12 日，电子版均为英文；能否付款与阅读取决于你的账号地区。分数是编辑判断，不表示已逐页验证全书。",
   "books": [
-    {
-      "title": "Goodthink",
-      "subtitle": "The New Science of Collective Intelligence",
-      "authors": [
-        "Damon Centola"
-      ],
-      "published": "2026-10-13",
-      "publisher": "The MIT Press",
-      "pages": 352,
-      "isbn": "9780262054683",
-      "score": 88,
-      "category": "集体决策 · 网络科学",
-      "theme": "systems",
-      "cover": "https://mit-press-new-us.imgix.net/covers/9780262054683.jpg?auto=format&w=640",
-      "thesis": "团队是否聪明，关键不只在成员能力，而在信息如何沿网络流动。Centola 把选择、协调、合作、创造拆成不同问题，主张针对任务调整连接结构，既利用社会学习，也防止从众吞没独立判断。",
-      "fit": "你读过《噪声》《经济学的思维方式》和系统、AI 类书；这本书把“一个人如何判断”推到“群体如何安排彼此影响”，能直接迁移到团队决策、平台设计和公共讨论。",
-      "evidence": "MIT Press 核实了 352 页、2026 年 10 月 13 日出版及书的四类决策框架。作者先前发表于 Trends in Cognitive Sciences 的综述梳理网络如何提升或损害集体智慧；PNAS 的临床人员实验发现，结构化信息共享改善了部分诊断与治疗判断。以上支持主题的研究基础，不能替代对明日发行的新书全文的独立评审。",
-      "caveat": "截至 10 月 12 日尚未正式发售，公开材料主要是出版社简介和相关论文，缺少对成书的独立批评。“回音室减少极化”等反直觉例子需在正文核对研究设计和适用边界；临床实验也不能直接推出所有组织都适用同一种网络结构。",
-      "sources": [
-        {
-          "label": "MIT Press 书目、预订与出版日期",
-          "url": "https://mitpress.mit.edu/9780262054683/goodthink/"
-        },
-        {
-          "label": "作者综述：网络科学与集体智能（PubMed）",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/36180361/"
-        },
-        {
-          "label": "PNAS 结构化共享实验（PubMed）",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/37487106/"
-        }
-      ]
-    },
     {
       "title": "American Scoundrel",
       "subtitle": "Roy Cohn's Dark Journey from Joe McCarthy to Donald Trump",
@@ -50,16 +17,16 @@
       ],
       "published": "2026-09-01",
       "publisher": "Scribner",
-      "pages": 448,
+      "pages": 528,
       "isbn": "9781668031575",
       "score": 90,
-      "category": "权力与政治人物 · 9 月补选",
+      "category": "权力与政治人物",
       "theme": "power",
       "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781668031575/american-scoundrel-9781668031575_hr.jpg",
       "thesis": "这部传记把 Roy Cohn 从麦卡锡时代的律师、纽约权势网络人物到特朗普导师的路径连起来。核心不是把一切政治变化归因于一个人，而是观察法律诉讼、媒体曝光、人脉交换和攻击对手如何组合成可复制的权力策略。",
       "fit": "你特别提到喜欢读特朗普相关书，也偏好制度、博弈和政治人物的机制性解释。它提供历史纵深，让“特朗普式作风”从性格叙事变成可以分析的组织与媒体技巧。",
-      "evidence": "Scribner 核实 2026 年 9 月 1 日出版、448 页，并提供正版电子书。美联社报道其使用政府文件、档案和数十次采访；Kirkus 评价为深入报道的传记。The Atlantic 对其论证提出明确反方，因此可同时检验结论而非只读宣传。",
-      "caveat": "这是 9 月出版的漏选补录，非 10 月首发。作者对 Cohn 的道德评价鲜明；The Atlantic 指出书中过多私人丑闻，以及“恶劣个体塑造当代政治”的解释可能低估时代制度和右翼运动。阅读时应区分档案事实、被访者记忆与作者推断。",
+      "evidence": "Scribner 的当前书目核实 2026 年 9 月 1 日出版、528 页及电子版 ISBN。美联社报道其使用政府文件、档案和数十次采访；Kirkus 的独立书评支持其报道深度。The Atlantic 提供对人物解释与论证范围的批评，可与作者结论对照。",
+      "caveat": "这是 9 月首发的近期新书，非 10 月首发。作者对 Cohn 的道德评价鲜明；The Atlantic 指出书中过多私人丑闻，以及“恶劣个体塑造当代政治”的解释可能低估时代制度和右翼运动。阅读时应区分档案事实、被访者记忆与作者推断。",
       "sources": [
         {
           "label": "Scribner 书目、电子书与购买",
@@ -77,81 +44,173 @@
           "label": "The Atlantic 的批评性书评",
           "url": "https://www.theatlantic.com/magazine/2026/10/roy-cohn-american-scoundrel-review/688351/"
         }
-      ]
-    }
-  ],
-  "watchlist": [
-    {
-      "title": "Why Don’t You Understand Me?",
-      "subtitle": "",
-      "authors": [
-        "Yael Schonbrun"
       ],
-      "published": "2026-10-27",
-      "publisher": "Chelsea Green",
-      "pages": 272,
-      "isbn": "9781645023579",
-      "score": 77,
-      "category": "心理与关系",
+      "collection": "new",
+      "ebook_access": {
+        "status": "available",
+        "published": "2026-09-01",
+        "checked_at": "2026-10-12",
+        "isbn": "9781668031599",
+        "language": "英文",
+        "format": "正版 eBook",
+        "note": "已核实发行和付费电子版页面。出版社直购需用 Simon & Schuster Books App 阅读；其他零售商、地区与支付方式以页面为准。",
+        "links": [
+          {
+            "label": "出版社电子版 / 购买",
+            "url": "https://www.simonandschuster.com/books/American-Scoundrel/Kai-Bird/9781668031599"
+          }
+        ]
+      }
+    },
+    {
+      "title": "How Minds Change",
+      "subtitle": "The Surprising Science of Belief, Opinion, and Persuasion",
+      "authors": [
+        "David McRaney"
+      ],
+      "published": "2022-06-21",
+      "publisher": "Portfolio",
+      "pages": 352,
+      "isbn": "9780593190296",
+      "score": 89,
+      "collection": "backlist",
+      "category": "认知与关系 · 信念改变",
       "theme": "mind",
-      "cover": "https://images2.penguinrandomhouse.com/cover/9781645023579",
-      "thesis": "把反复误解解释为知觉、记忆和意义建构偏差，而不仅是说话技巧问题。",
-      "fit": "呼应你对关系、心理偏差和冲突沟通的持续阅读兴趣。",
-      "evidence": "出版社核实 10 月 27 日预售、272 页和电子书，作者有临床与行为科学背景。",
-      "caveat": "正式出版尚需两周；目前多为出版社简介和推荐语，缺少独立成书评测与可核对的研究对应关系，先观察。",
+      "cover": "https://images2.penguinrandomhouse.com/cover/9780593190296",
+      "thesis": "把更多事实塞给一个人，并不总能改变他的信念：观点还承担群体归属和自我身份的功能。McRaney 通过访谈与研究解释，尊重、追问信念形成过程和让对方自己检查理由，如何创造重新判断的条件。",
+      "fit": "连接你对慢思考、偏见、关系和心理改变的兴趣。它把“识别认知偏差”推进到“在真实分歧中怎样一起检查理由”，也能让你反过来检验自己的确定感，而不只研究怎样说服别人。",
+      "evidence": "Portfolio 与 Kobo 核实 2022 年出版、352 页和已发行英文 EPUB。Kirkus、Publishers Weekly 分别有独立书评。书中涉及的深度对话路线还可对照 Broockman 与 Kalla 的 2016 年 Science 随机实地实验；该研究支持特定情境中的效果，不证明全书每项主张。",
+      "caveat": "这是科学记者的综合叙事，不是系统综述或万能说服术。个案可能偏向成功故事；特定政治态度实验不能外推到所有信念、所有文化或持续关系。把方法先用于自己的理由，避免把倾听变成隐蔽操控。",
+      "ebook_access": {
+        "status": "available",
+        "published": "2022-06-21",
+        "checked_at": "2026-10-12",
+        "isbn": "9780593190302",
+        "language": "英文",
+        "format": "EPUB 3 · Adobe DRM",
+        "note": "Kobo 明确列出英文电子版、发行日期与试读 / 购买入口。通常在 Kobo App 或兼容设备阅读；商店地区会影响购买。",
+        "links": [
+          {
+            "label": "Kobo 电子版 / 试读 / 购买",
+            "url": "https://www.kobo.com/us/en/ebook/how-minds-change-2"
+          }
+        ]
+      },
       "sources": [
         {
-          "label": "出版社官方书目与电子书",
-          "url": "https://www.penguinrandomhouse.com/books/827849/why-dont-you-understand-me-by-yael-schonbrun-phd/"
+          "label": "Portfolio 官方书目与电子版",
+          "url": "https://www.penguinrandomhouse.com/books/639563/how-minds-change-by-david-mcraney/"
+        },
+        {
+          "label": "Kirkus 独立书评",
+          "url": "https://www.kirkusreviews.com/book-reviews/david-mcraney/how-minds-change/"
+        },
+        {
+          "label": "Publishers Weekly 独立书评",
+          "url": "https://www.publishersweekly.com/9780593190296"
+        },
+        {
+          "label": "Science 实地实验（PubMed）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27124458/"
         }
       ]
     },
     {
-      "title": "Just Right",
-      "subtitle": "Why We Like What We Like (and Why We Don't What We Don't)",
+      "title": "Thinking in Systems",
+      "subtitle": "A Primer",
       "authors": [
-        "Uriel Meshoulam"
+        "Donella Meadows"
       ],
-      "published": "2026-10",
-      "publisher": "ibidem Press",
-      "pages": 200,
-      "isbn": "9783838221182",
-      "score": 73,
-      "category": "偏好与自我调节",
-      "theme": "mind",
-      "cover": "",
-      "thesis": "用“刺激过少与过量之间的最优区间”解释无聊、焦虑、动机与审美偏好。",
-      "fit": "接近你对决策、自我改变与心理机制的兴趣。",
-      "evidence": "Columbia University Press 的发行页面核实了 ibidem Press 为真正出版社、2026 年 10 月和 200 页。",
-      "caveat": "“金发姑娘区间”是已有理论；当前没有足够独立书评或样章来确认新论证的增量，且不能把哥伦比亚大学出版社的发行服务误当其自家学术出版。",
+      "published": "2008-12-05",
+      "publisher": "Chelsea Green Publishing",
+      "pages": 240,
+      "isbn": "9781603580557",
+      "score": 92,
+      "collection": "backlist",
+      "category": "系统思维 · 改变的杠杆",
+      "theme": "systems",
+      "cover": "https://images2.penguinrandomhouse.com/cover/9781603580557",
+      "thesis": "反复出现的问题，往往由存量、流量、反馈、延迟和目标共同产生。只修一个局部可能把问题转移甚至放大；找到规则、信息流和目标的改变空间，常比不断加强个人意志更有用。",
+      "fit": "连接你读过的复杂经济学、主动推理和 AI / 工程书，也给自我改变提供更可检验的路径：把习惯、项目或关系画成反馈结构，再找能改变持续结果的环节。它特别适合挑战“只要更努力就能解决”的直觉。",
+      "evidence": "Chelsea Green 与 Penguin Random House 核实 240 页及纸书 / 电子版日期，Kobo 核实英文 EPUB 和电子版 ISBN。作者项目网站公开“杠杆点”原文供检查核心思想；The New Yorker 的独立讨论展示书中反馈、延迟与局部目标的解释价值。",
+      "caveat": "它是系统动力学传统的入门书，不覆盖全部复杂系统理论。因果回路图只能提出假设，不能替代测量和因果识别；作者也明确提醒杠杆点不是通用配方。个人关系与政治问题里，还应考虑权力、价值冲突和无法量化的条件。",
+      "ebook_access": {
+        "status": "available",
+        "published": "2008-12-03",
+        "checked_at": "2026-10-12",
+        "isbn": "9781603581486",
+        "language": "英文",
+        "format": "EPUB 3 · Adobe DRM",
+        "note": "Kobo 与发行商均确认电子版已发行。可在 Kobo App 或兼容设备阅读；作者公开的“杠杆点”文章可先免费读，但不是全书。",
+        "links": [
+          {
+            "label": "Kobo 电子版 / 购买",
+            "url": "https://www.kobo.com/us/en/ebook/thinking-in-systems-2"
+          },
+          {
+            "label": "作者授权文章 · 免费读",
+            "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+          }
+        ]
+      },
       "sources": [
         {
-          "label": "Columbia University Press 发行书目",
-          "url": "https://cup.columbia.edu/book/just-right/9783838221182/"
+          "label": "Chelsea Green 官方书目",
+          "url": "https://www.chelseagreen.com/product/thinking-in-systems/"
+        },
+        {
+          "label": "发行商核实电子版日期",
+          "url": "https://www.penguinrandomhouse.com/books/801035/thinking-in-systems-by-donella-meadows/"
+        },
+        {
+          "label": "作者原文：杠杆点",
+          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+        },
+        {
+          "label": "The New Yorker 独立讨论",
+          "url": "https://www.newyorker.com/culture/open-questions/how-do-you-know-when-a-system-has-failed"
         }
       ]
     }
   ],
+  "watchlist": [],
   "rejected_summary": {
-    "count": 5,
+    "count": 8,
     "reasons": [
-      "原版上市时间与本期不符（再版、未来发行或既往电子版）",
+      "尚未出版、发行日无法确认，或未核实可购买的正版电子版",
       "只有宣传资料，缺少足以支持思想增量的独立评测",
-      "畅销或强主张不能抵消因果链争议"
+      "畅销或强主张不能抵消因果链争议；不因旧书年份而自动淘汰"
     ],
     "examples": [
       {
+        "title": "Goodthink",
+        "reason": "10 月 12 日核验时尚未发行；不能用预订页替代可读电子版，移出本期推荐。"
+      },
+      {
+        "title": "Why Don’t You Understand Me?",
+        "reason": "10 月 27 日才发行，预售不符合“现在能读”的门槛。"
+      },
+      {
         "title": "The New Dark Ages",
-        "reason": "独立评论对其因果论证有明显分歧：Kirkus 肯定其历史叙述；Reason 批评屏幕、阅读能力和民主衰退之间的因果链及研究引用。你已读过深阅读相关书，思想增量不足以抵消争议。"
-      },
-      {
-        "title": "The Emergent Mind",
-        "reason": "2026 年 10 月的 Pan 平装本容易被误认新书；Basic Books 官方记录原版 2025 年 10 月已上市。值得读，但不符合本月新书标准。"
-      },
-      {
-        "title": "Rethinking Intelligence in the Age of Artificial Minds",
-        "reason": "电子版 2026 年 7 月已出，纸本排期 2027 年 2 月；不算 10 月新书。大框架目前也缺少独立成书评测。"
+        "reason": "独立评论对屏幕、阅读能力和民主衰退之间的因果链有明显分歧，暂不优先于本期三本。"
       }
     ]
-  }
+  },
+  "reading_policy": {
+    "require_published": true,
+    "require_verified_ebook": true,
+    "recent_window_days": 150
+  },
+  "collections": [
+    {
+      "id": "new",
+      "label": "近期新书",
+      "description": "近 150 天出版的新书，已有正版电子版。"
+    },
+    {
+      "id": "backlist",
+      "label": "深度好书 · 可读电子版",
+      "description": "不以年份限制价值：已出版、有正版电子版，值得重新理解世界。"
+    }
+  ]
 }

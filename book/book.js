@@ -71,6 +71,23 @@ function renderBook(book, index) {
     sources.append(link);
   });
 
+  const accessPanel = $("[data-ebook-access]", node);
+  const access = book.ebook_access;
+  accessPanel.hidden = access?.status !== "available";
+  if (!accessPanel.hidden) {
+    $("[data-ebook-meta]", node).textContent = [access.language, access.format, `电子版 ISBN ${access.isbn}`, `核验 ${access.checked_at}`].filter(Boolean).join(" · ");
+    $("[data-ebook-note]", node).textContent = access.note || "购买前请确认商店地区与支持的阅读设备。";
+    (access.links || []).forEach((source) => {
+      const link = document.createElement("a");
+      link.className = "source-link";
+      link.href = source.url;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      link.textContent = `${source.label} ↗`;
+      $("[data-ebook-links]", node).append(link);
+    });
+  }
+
   const save = $("[data-save]", node);
   const complete = $("[data-complete]", node);
   const review = $("[data-review]", node);
@@ -108,6 +125,34 @@ function applyFilter() {
   $$(".book-card", $("[data-books]")).forEach((card) => {
     card.hidden = state.filter !== "all" && card.dataset.theme !== state.filter;
   });
+  $$(".book-collection", $("[data-books]")).forEach((section) => {
+    section.hidden = !$(".book-card:not([hidden])", section);
+  });
+}
+
+function renderBooks(report) {
+  const root = $("[data-books]");
+  if (!report.collections?.length) {
+    root.replaceChildren(...report.books.map(renderBook));
+    return;
+  }
+  root.replaceChildren(...report.collections.map((collection) => {
+    const section = document.createElement("section");
+    section.className = "book-collection";
+    section.dataset.collection = collection.id;
+    const header = document.createElement("header");
+    header.className = "collection-heading";
+    const title = document.createElement("h2");
+    title.textContent = collection.label;
+    const description = document.createElement("p");
+    description.textContent = collection.description;
+    header.append(title, description);
+    section.append(header);
+    report.books.forEach((book, index) => {
+      if (book.collection === collection.id) section.append(renderBook(book, index));
+    });
+    return section;
+  }));
 }
 
 function renderWatchlist(books = []) {
@@ -274,7 +319,7 @@ function renderReport(report) {
   $("[data-scanned]").textContent = String(report.scanned ?? "—");
   $("[data-headline]").textContent = report.headline;
   $("[data-editor-note]").textContent = report.editor_note;
-  $("[data-books]").replaceChildren(...report.books.map(renderBook));
+  renderBooks(report);
   renderWatchlist(report.watchlist);
   renderRejected(report.rejected_summary);
   applyFilter();
