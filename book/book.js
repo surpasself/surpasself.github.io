@@ -189,10 +189,17 @@ function editorialCandidate(book, status) {
 function mergeCandidates(report, audit) {
   const merged = new Map();
   (audit?.candidates || report.candidates || []).forEach((book) => {
-    merged.set(BookJournal.keyFor(book), { ...book, origin: "automatic" });
+    merged.set(BookJournal.keyFor(book), { ...book, origin: book.origin || "automatic" });
   });
-  (report.watchlist || []).forEach((book) => merged.set(BookJournal.keyFor(book), editorialCandidate(book, "watch")));
-  (report.books || []).forEach((book) => merged.set(BookJournal.keyFor(book), editorialCandidate(book, "recommend")));
+  const addEditorial = (book, status) => {
+    const key = BookJournal.keyFor(book);
+    const curated = editorialCandidate(book, status);
+    const audited = merged.get(key);
+    if (audited?.origin === "editorial" && audited.reason) curated.reason = audited.reason;
+    merged.set(key, curated);
+  };
+  (report.watchlist || []).forEach((book) => addEditorial(book, "watch"));
+  (report.books || []).forEach((book) => addEditorial(book, "recommend"));
   return [...merged.values()];
 }
 
@@ -252,7 +259,9 @@ function renderCandidateAudit(report, audit) {
   $("[data-audit-all]").textContent = String(state.candidates.length);
   const automaticCount = state.candidates.filter((book) => book.origin === "automatic").length;
   const editorialCount = state.candidates.length - automaticCount;
-  $("[data-candidate-note]").textContent = `自动扫描 ${automaticCount} 本；另有 ${editorialCount} 本经编辑级资料复核。每一本都显示去留理由。`;
+  $("[data-candidate-note]").textContent = automaticCount
+    ? `自动扫描 ${automaticCount} 本；另有 ${editorialCount} 本经编辑级资料复核。每一本都显示去留理由。`
+    : `本月人工核验 ${editorialCount} 本候选。每一本都显示去留理由。`;
   const rejectedCount = state.candidates.filter((book) => book.status === "reject").length;
   if (rejectedCount) $("[data-rejected-count]").textContent = String(rejectedCount);
   renderCandidateList();

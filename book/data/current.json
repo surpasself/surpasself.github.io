@@ -1,157 +1,156 @@
 {
   "schema_version": 1,
-  "issue": "2026-08",
-  "generated_at": "2026-08-02T06:00:00+00:00",
+  "issue": "2026-10",
+  "generated_at": "2026-10-12T12:27:11Z",
   "status": "editorial-verified",
-  "scanned": 31,
-  "selected_count": 4,
-  "headline": "2026 年 8 月 · 4 本真正值得占用注意力的新书",
-  "editor_note": "这不是畅销榜复读。本期优先选择能提供新模型、材料扎实、并与你的心理学、经济权力、AI 和自我改变兴趣形成交叉的书。",
+  "scanned": 9,
+  "selected_count": 2,
+  "headline": "2026 年 10 月 · 从集体智慧到权力运作",
+  "editor_note": "截至 10 月 12 日，人工核验 9 本候选，正式推荐 2 本。Goodthink 将于 10 月 13 日出版，判断依据为官方书目与相关同行评议研究，尚无成书独立评测；American Scoundrel 是 9 月漏选新书的补录。分数是编辑判断，不是内容已被完整验证的概率。",
   "books": [
     {
-      "title": "What Happened to Liberal Democracy?",
-      "subtitle": "Remaking a Politics of Shared Prosperity",
-      "authors": ["Daron Acemoglu"],
-      "published": "2026-08-11",
-      "publisher": "Dutton",
-      "pages": 416,
-      "isbn": "9798217182169",
-      "score": 95,
-      "category": "权力、经济与政治",
-      "theme": "power",
-      "cover": "https://covers.openlibrary.org/b/isbn/9798217182169-L.jpg?default=false",
-      "thesis": "它把自由民主的危机从“选民变坏了”改写成一个制度与技术选择问题：后工业经济、精英分离和技术方向共同削弱了共享繁荣。最有价值的颠覆点是——技术造成什么后果并非命运，而是权力分配的结果。",
-      "fit": "同时连接你对经济学、文化、特朗普、复杂系统和 AI 的兴趣；比单纯的政治新闻多一层制度机制，也比宏大价值宣言更接近可分析的因果链。",
-      "evidence": "作者是 MIT 制度经济学家、2024 年诺贝尔经济学奖得主；全书 416 页，以经济史、政治哲学和技术变迁交叉论证。出版社页面已列出明确中心论点与多位跨立场学者评价。",
-      "caveat": "8 月 11 日才正式出版，当前判断主要依据出版社披露、作者既有研究轨迹和先行评价；它有明确的自由主义重建立场，不应把规范性主张误当成已被完全证明。",
-      "sources": [
-        {"label": "Dutton / Penguin Random House", "url": "https://www.penguinrandomhouse.com/books/815318/what-happened-to-liberal-democracy-by-daron-acemoglu/"},
-        {"label": "Google Books 书目信息", "url": "https://books.google.com/books/about/WHAT_HAPPENED_TO_LIBERAL_DEMOCRACY.html?id=QrfM0QEACAAJ"}
-      ]
-    },
-    {
-      "title": "Inventing ELIZA",
-      "subtitle": "How the First Chatbot Shaped the Future of AI",
-      "authors": ["Sarah Ciston", "David M. Berry", "Anthony C. Hay", "Mark C. Marino", "Peter Millican", "Jeff Shrager", "Arthur I. Schwarz", "Peggy Weil"],
-      "published": "2026-07-14",
+      "title": "Goodthink",
+      "subtitle": "The New Science of Collective Intelligence",
+      "authors": [
+        "Damon Centola"
+      ],
+      "published": "2026-10-13",
       "publisher": "The MIT Press",
-      "pages": 350,
-      "isbn": "9780262052481",
-      "score": 93,
-      "category": "AI 与技术社会",
-      "theme": "ai",
-      "cover": "https://covers.openlibrary.org/b/isbn/9780262052481-L.jpg?default=false",
-      "thesis": "它不是又一本追逐大模型热点的书，而是用重新发现的源代码和失落脚本，拆掉“ELIZA 只是简单关键词匹配”的扁平神话。它可能改变你理解 AI 的起点：技术能力、用户投射和社会叙事从第一代聊天机器人开始就纠缠在一起。",
-      "fit": "与你书单中的 AI Agents、机器学习、技术的本质、心理学和设计模式形成罕见交叉；能帮助你把今天的 Agent 热潮放回更长的技术史里看。",
-      "evidence": "研究团队核对了 MIT、Stanford 与 UCLA 档案，恢复原始 MAD-SLIP 源码及此前缺失的脚本；350 页，MIT Press 出版，并提供开放获取版本和可运行的 ELIZA 重建站点。",
-      "caveat": "它是软件史与批判代码研究，不是现代 Agent 工程手册；八位作者的合集式写法可能牺牲叙事连贯性。若你当下只想提升实操能力，它不是最短路径。",
-      "sources": [
-        {"label": "MIT Press 官方页面与开放版", "url": "https://mitpress.mit.edu/9780262052481/inventing-eliza/"},
-        {"label": "Finding ELIZA 项目", "url": "https://findingeliza.org/"}
-      ]
-    },
-    {
-      "title": "The 12 Levers",
-      "subtitle": "The Complete Psychological Toolkit for Improving Your Life",
-      "authors": ["Spencer Greenberg", "Jeremy Stevenson"],
-      "published": "2026-07-28",
-      "publisher": "Balance / Hachette",
-      "pages": 368,
-      "isbn": "9780306837463",
+      "pages": 352,
+      "isbn": "9780262054683",
       "score": 88,
-      "category": "心理与自我改变",
-      "theme": "mind",
-      "cover": "https://covers.openlibrary.org/b/isbn/9780306837463-L.jpg?default=false",
-      "thesis": "它试图把 106 本自助书和 23 种治疗方法压缩成 12 个可重复的心理杠杆。真正可能颠覆你的不是某个新口号，而是发现“显化、习惯、情绪调节、行动力”背后可能只是少数机制的不同包装。",
-      "fit": "它正好处在《学会慢思考》、允许一切发生、习惯改变和显化兴趣的交界；保留你重视的主体能动性，同时把判断拉回心理机制与可实践步骤。",
-      "evidence": "一位应用数学/心理研究者与一位临床心理学家共同撰写；作者声称系统分析 106 本自助书与 23 种治疗路径，覆盖价值澄清、暴露、注意训练、睡眠和生产力等机制。",
-      "caveat": "“压缩成 12 个杠杆”本身也可能过度简化；出版社页面没有展示完整编码方法和证据分级，因此它更像高质量整合，而不是严格的学术系统综述。",
+      "category": "集体决策 · 网络科学",
+      "theme": "systems",
+      "cover": "https://mit-press-new-us.imgix.net/covers/9780262054683.jpg?auto=format&w=640",
+      "thesis": "团队是否聪明，关键不只在成员能力，而在信息如何沿网络流动。Centola 把选择、协调、合作、创造拆成不同问题，主张针对任务调整连接结构，既利用社会学习，也防止从众吞没独立判断。",
+      "fit": "你读过《噪声》《经济学的思维方式》和系统、AI 类书；这本书把“一个人如何判断”推到“群体如何安排彼此影响”，能直接迁移到团队决策、平台设计和公共讨论。",
+      "evidence": "MIT Press 核实了 352 页、2026 年 10 月 13 日出版及书的四类决策框架。作者先前发表于 Trends in Cognitive Sciences 的综述梳理网络如何提升或损害集体智慧；PNAS 的临床人员实验发现，结构化信息共享改善了部分诊断与治疗判断。以上支持主题的研究基础，不能替代对明日发行的新书全文的独立评审。",
+      "caveat": "截至 10 月 12 日尚未正式发售，公开材料主要是出版社简介和相关论文，缺少对成书的独立批评。“回音室减少极化”等反直觉例子需在正文核对研究设计和适用边界；临床实验也不能直接推出所有组织都适用同一种网络结构。",
       "sources": [
-        {"label": "Hachette 官方页面", "url": "https://www.hachettebookgroup.com/titles/spencer-greenberg-phd/the-12-levers/9780306837463/"},
-        {"label": "Clearer Thinking 研究工具", "url": "https://www.clearerthinking.org/"}
+        {
+          "label": "MIT Press 书目、预订与出版日期",
+          "url": "https://mitpress.mit.edu/9780262054683/goodthink/"
+        },
+        {
+          "label": "作者综述：网络科学与集体智能（PubMed）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36180361/"
+        },
+        {
+          "label": "PNAS 结构化共享实验（PubMed）",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37487106/"
+        }
       ]
     },
     {
-      "title": "Regime Change",
-      "subtitle": "Inside the Imperial Presidency of Donald Trump",
-      "authors": ["Maggie Haberman", "Jonathan Swan"],
-      "published": "2026-06-23",
-      "publisher": "Simon & Schuster",
-      "pages": 496,
-      "isbn": "9781668067246",
-      "score": 86,
-      "category": "权力、经济与政治",
+      "title": "American Scoundrel",
+      "subtitle": "Roy Cohn's Dark Journey from Joe McCarthy to Donald Trump",
+      "authors": [
+        "Kai Bird",
+        "Susan Goldmark"
+      ],
+      "published": "2026-09-01",
+      "publisher": "Scribner",
+      "pages": 448,
+      "isbn": "9781668031575",
+      "score": 90,
+      "category": "权力与政治人物 · 9 月补选",
       "theme": "power",
-      "cover": "https://covers.openlibrary.org/b/isbn/9781668067246-L.jpg?default=false",
-      "thesis": "它把特朗普第二任期理解为“总统职位本身发生制度性变化”，而不只是性格奇观。真正值得读的是数百次采访呈现的决策环境：忠诚、即兴、报复、媒体现实与行政权如何互相放大。",
-      "fit": "你明确喜欢特朗普相关书，也持续阅读权力、文化和人性；这本书能提供接近权力中心的材料，让兴趣从人物好恶升级到制度与组织行为。",
-      "evidence": "两位作者长期近距离报道特朗普，书中基于数百次采访与白宫内部材料；496 页，出版后已有多家媒体交叉评述，其关键事实截至目前没有出现系统性推翻。",
-      "caveat": "这是任期进行中的即时史，叙事强、时效强，也更容易被作者的采访网络和新闻节奏塑形。适合当作高密度报告文学，不适合当作特朗普时代的最终定论。",
+      "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781668031575/american-scoundrel-9781668031575_hr.jpg",
+      "thesis": "这部传记把 Roy Cohn 从麦卡锡时代的律师、纽约权势网络人物到特朗普导师的路径连起来。核心不是把一切政治变化归因于一个人，而是观察法律诉讼、媒体曝光、人脉交换和攻击对手如何组合成可复制的权力策略。",
+      "fit": "你特别提到喜欢读特朗普相关书，也偏好制度、博弈和政治人物的机制性解释。它提供历史纵深，让“特朗普式作风”从性格叙事变成可以分析的组织与媒体技巧。",
+      "evidence": "Scribner 核实 2026 年 9 月 1 日出版、448 页，并提供正版电子书。美联社报道其使用政府文件、档案和数十次采访；Kirkus 评价为深入报道的传记。The Atlantic 对其论证提出明确反方，因此可同时检验结论而非只读宣传。",
+      "caveat": "这是 9 月出版的漏选补录，非 10 月首发。作者对 Cohn 的道德评价鲜明；The Atlantic 指出书中过多私人丑闻，以及“恶劣个体塑造当代政治”的解释可能低估时代制度和右翼运动。阅读时应区分档案事实、被访者记忆与作者推断。",
       "sources": [
-        {"label": "Simon & Schuster 官方页面", "url": "https://www.simonandschuster.net/books/Regime-Change/Maggie-Haberman/9781668067246"},
-        {"label": "AP 出版与销量核验", "url": "https://apnews.com/article/ca728fa5ab927c92aa6a9e8e710af740"}
+        {
+          "label": "Scribner 书目、电子书与购买",
+          "url": "https://www.simonandschuster.com/books/American-Scoundrel/Kai-Bird/9781668031575"
+        },
+        {
+          "label": "美联社：档案与采访来源",
+          "url": "https://apnews.com/article/f9eb2443cbb68e664bee4487e3973df0"
+        },
+        {
+          "label": "Kirkus 独立书评",
+          "url": "https://www.kirkusreviews.com/book-reviews/kai-bird/american-scoundrel-2/"
+        },
+        {
+          "label": "The Atlantic 的批评性书评",
+          "url": "https://www.theatlantic.com/magazine/2026/10/roy-cohn-american-scoundrel-review/688351/"
+        }
       ]
     }
   ],
   "watchlist": [
     {
-      "title": "The Society That Learns",
-      "subtitle": "Constructionism and Lifelong Learning in Thailand",
-      "authors": ["Paulo Blikstein", "Deborah A. Fields"],
-      "published": "2026-07",
-      "publisher": "The MIT Press",
-      "pages": 0,
-      "isbn": "",
-      "score": 81,
-      "category": "系统、学习与复杂性",
-      "theme": "systems",
-      "cover": "",
-      "thesis": "30 年社区实践把“通过创造来学习”从课堂方法扩展成农业、村庄发展和工业变革，可能提供一个真正跨尺度的学习系统案例。",
-      "fit": "连接学习科学、主动推理、系统思维与做中学。",
-      "evidence": "MIT Press 披露其使用了丰富案例，追踪泰国建构主义社区三十年。",
-      "caveat": "目前缺少足够的独立评述，且案例高度依赖泰国语境，先观察其方法是否能跨文化迁移。",
+      "title": "Why Don’t You Understand Me?",
+      "subtitle": "",
+      "authors": [
+        "Yael Schonbrun"
+      ],
+      "published": "2026-10-27",
+      "publisher": "Chelsea Green",
+      "pages": 272,
+      "isbn": "9781645023579",
+      "score": 77,
+      "category": "心理与关系",
+      "theme": "mind",
+      "cover": "https://images2.penguinrandomhouse.com/cover/9781645023579",
+      "thesis": "把反复误解解释为知觉、记忆和意义建构偏差，而不仅是说话技巧问题。",
+      "fit": "呼应你对关系、心理偏差和冲突沟通的持续阅读兴趣。",
+      "evidence": "出版社核实 10 月 27 日预售、272 页和电子书，作者有临床与行为科学背景。",
+      "caveat": "正式出版尚需两周；目前多为出版社简介和推荐语，缺少独立成书评测与可核对的研究对应关系，先观察。",
       "sources": [
-        {"label": "MIT Press 2026 年 7 月新书", "url": "https://mitpress.mit.edu/july-2026-new-books-america-unfinished-inventing-eliza-the-society-that-learns-and-more/"}
+        {
+          "label": "出版社官方书目与电子书",
+          "url": "https://www.penguinrandomhouse.com/books/827849/why-dont-you-understand-me-by-yael-schonbrun-phd/"
+        }
       ]
     },
     {
-      "title": "Solving Procrastination",
-      "subtitle": "The Science of Why We Put Things Off and How to (Finally!) Stop",
-      "authors": ["Itamar Shatz"],
-      "published": "2026-08-25",
-      "publisher": "Tarcher / Penguin Random House",
-      "pages": 320,
-      "isbn": "9798217047406",
-      "score": 79,
-      "category": "心理与自我改变",
+      "title": "Just Right",
+      "subtitle": "Why We Like What We Like (and Why We Don't What We Don't)",
+      "authors": [
+        "Uriel Meshoulam"
+      ],
+      "published": "2026-10",
+      "publisher": "ibidem Press",
+      "pages": 200,
+      "isbn": "9783838221182",
+      "score": 73,
+      "category": "偏好与自我调节",
       "theme": "mind",
-      "cover": "https://covers.openlibrary.org/b/isbn/9798217047406-L.jpg?default=false",
-      "thesis": "它把拖延从意志薄弱改写为多种不同机制，提出九类拖延者与差异化干预。",
-      "fit": "连接行为、专注、习惯与自驱成长。",
-      "evidence": "作者拥有 Cambridge 博士学位并教授定量与计算研究方法，出版社称内容基于数百项研究。",
-      "caveat": "8 月 25 日才出版，当前主要是作者与出版社承诺；主题实用，但世界观增量可能不如本期四本正式推荐。",
+      "cover": "",
+      "thesis": "用“刺激过少与过量之间的最优区间”解释无聊、焦虑、动机与审美偏好。",
+      "fit": "接近你对决策、自我改变与心理机制的兴趣。",
+      "evidence": "Columbia University Press 的发行页面核实了 ibidem Press 为真正出版社、2026 年 10 月和 200 页。",
+      "caveat": "“金发姑娘区间”是已有理论；当前没有足够独立书评或样章来确认新论证的增量，且不能把哥伦比亚大学出版社的发行服务误当其自家学术出版。",
       "sources": [
-        {"label": "Penguin Random House 官方页面", "url": "https://www.penguinrandomhouse.com/books/787904/solving-procrastination-by-itamar-shatz-phd/"},
-        {"label": "University of Cambridge 作者介绍", "url": "https://www.cam.ac.uk/stories/itamar-shatz-solving-procrastination"}
+        {
+          "label": "Columbia University Press 发行书目",
+          "url": "https://cup.columbia.edu/book/just-right/9783838221182/"
+        }
       ]
     }
   ],
   "rejected_summary": {
-    "count": 25,
+    "count": 5,
     "reasons": [
-      "只有营销承诺，缺少机制或可核验材料",
-      "与既有书单高度重复，没有明显思想增量",
-      "主题匹配但作者/出版社/样章证据不足",
-      "依赖“高频思想、宇宙回应、保证实现”等不可检验断言"
+      "原版上市时间与本期不符（再版、未来发行或既往电子版）",
+      "只有宣传资料，缺少足以支持思想增量的独立评测",
+      "畅销或强主张不能抵消因果链争议"
     ],
     "examples": [
       {
-        "title": "From Hoping to Having",
-        "reason": "显化主题匹配，但目前核心论证仍是吸引力法则，证据强度不足；不因兴趣匹配而直接入选。"
+        "title": "The New Dark Ages",
+        "reason": "独立评论对其因果论证有明显分歧：Kirkus 肯定其历史叙述；Reason 批评屏幕、阅读能力和民主衰退之间的因果链及研究引用。你已读过深阅读相关书，思想增量不足以抵消争议。"
       },
       {
-        "title": "The Manifestation Workbook",
-        "reason": "更像练习册，方法可能有情绪整理价值，但达不到本月“深刻颠覆与新模型”的门槛。"
+        "title": "The Emergent Mind",
+        "reason": "2026 年 10 月的 Pan 平装本容易被误认新书；Basic Books 官方记录原版 2025 年 10 月已上市。值得读，但不符合本月新书标准。"
+      },
+      {
+        "title": "Rethinking Intelligence in the Age of Artificial Minds",
+        "reason": "电子版 2026 年 7 月已出，纸本排期 2027 年 2 月；不算 10 月新书。大框架目前也缺少独立成书评测。"
       }
     ]
   }

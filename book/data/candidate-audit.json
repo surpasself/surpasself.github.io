@@ -1,807 +1,178 @@
 {
   "schema_version": 1,
-  "issue": "2026-09",
-  "generated_at": "2026-09-01T05:48:12+00:00",
-  "scanned": 45,
+  "issue": "2026-10",
+  "generated_at": "2026-10-12T12:27:11Z",
+  "method": "人工核验官方书目、研究论文与独立书评；非自动全网扫描",
+  "scanned": 9,
   "candidates": [
     {
-      "title": "Breaking the Simulation",
+      "title": "Goodthink",
       "authors": [
-        "W. Peter Howell"
+        "Damon Centola"
       ],
-      "published": "2026",
-      "publisher": "Ariadyne Press Inc",
-      "pages": 398,
-      "isbn": "9798993093413",
-      "score": 59,
+      "published": "2026-10-13",
+      "publisher": "The MIT Press",
+      "pages": 352,
+      "isbn": "9780262054683",
+      "score": 88,
+      "status": "recommend",
+      "themes": [
+        "集体决策 · 网络科学"
+      ],
+      "reason": "主题研究有同行评议实验基础；2026-10-13 尚未发售，成书评测待补。",
+      "source_url": "https://mitpress.mit.edu/9780262054683/goodthink/",
+      "origin": "editorial"
+    },
+    {
+      "title": "American Scoundrel",
+      "authors": [
+        "Kai Bird",
+        "Susan Goldmark"
+      ],
+      "published": "2026-09-01",
+      "publisher": "Scribner",
+      "pages": 448,
+      "isbn": "9781668031575",
+      "score": 90,
+      "status": "recommend",
+      "themes": [
+        "权力与政治人物 · 9 月补选"
+      ],
+      "reason": "档案采访与多家独立书评支持；作为 9 月漏选的新书补录。",
+      "source_url": "https://www.simonandschuster.com/books/American-Scoundrel/Kai-Bird/9781668031575",
+      "origin": "editorial"
+    },
+    {
+      "title": "Why Don’t You Understand Me?",
+      "authors": [
+        "Yael Schonbrun"
+      ],
+      "published": "2026-10-27",
+      "publisher": "Chelsea Green",
+      "pages": 272,
+      "isbn": "9781645023579",
+      "score": 77,
+      "status": "watch",
+      "themes": [
+        "心理与关系"
+      ],
+      "reason": "正式出版尚需两周；目前多为出版社简介和推荐语，缺少独立成书评测与可核对的研究对应关系，先观察。",
+      "source_url": "https://www.penguinrandomhouse.com/books/827849/why-dont-you-understand-me-by-yael-schonbrun-phd/",
+      "origin": "editorial"
+    },
+    {
+      "title": "Just Right",
+      "authors": [
+        "Uriel Meshoulam"
+      ],
+      "published": "2026-10",
+      "publisher": "ibidem Press",
+      "pages": 200,
+      "isbn": "9783838221182",
+      "score": 73,
+      "status": "watch",
+      "themes": [
+        "偏好与自我调节"
+      ],
+      "reason": "“金发姑娘区间”是已有理论；当前没有足够独立书评或样章来确认新论证的增量，且不能把哥伦比亚大学出版社的发行服务误当其自家学术出版。",
+      "source_url": "https://cup.columbia.edu/book/just-right/9783838221182/",
+      "origin": "editorial"
+    },
+    {
+      "title": "The New Dark Ages",
+      "authors": [
+        "James Marriott"
+      ],
+      "published": "2026-10-06",
+      "publisher": "Doubleday",
+      "pages": 208,
+      "isbn": "9780385552943",
+      "score": 64,
       "status": "reject",
       "themes": [
-        "心理与自我改变",
-        "AI 与技术社会",
-        "系统、学习与复杂性",
-        "哲学、存在与关系"
+        "认知",
+        "阅读"
       ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL44994490W"
+      "reason": "独立评论对其因果论证有明显分歧：Kirkus 肯定其历史叙述；Reason 批评屏幕、阅读能力和民主衰退之间的因果链及研究引用。你已读过深阅读相关书，思想增量不足以抵消争议。",
+      "source_url": "https://www.kirkusreviews.com/book-reviews/james-marriott/the-new-dark-ages/",
+      "origin": "editorial"
     },
     {
-      "title": "AI Engineering",
+      "title": "The Emergent Mind",
       "authors": [
-        "Chip Huyen"
+        "Gaurav Suri",
+        "Jay McClelland"
       ],
-      "published": "2026",
-      "publisher": "O'Reilly Media, Incorporated",
-      "pages": 442,
-      "isbn": "9798341671317",
-      "score": 54,
+      "published": "2025-10-21",
+      "publisher": "Basic Books",
+      "pages": 368,
+      "isbn": "9781541605268",
+      "score": 78,
       "status": "reject",
       "themes": [
-        "权力、经济与政治",
-        "AI 与技术社会",
-        "系统、学习与复杂性"
+        "AI",
+        "认知"
       ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL39671094W"
+      "reason": "2026 年 10 月的 Pan 平装本容易被误认新书；Basic Books 官方记录原版 2025 年 10 月已上市。值得读，但不符合本月新书标准。",
+      "source_url": "https://www.hachettebookgroup.com/titles/gaurav-suri/the-emergent-mind/9781541605268/",
+      "origin": "editorial"
     },
     {
-      "title": "Human Still Wins",
+      "title": "Rethinking Intelligence in the Age of Artificial Minds",
       "authors": [
-        "Kara Fox"
+        "Paul Jorion"
       ],
-      "published": "2026-08-09",
-      "publisher": "Independently published",
-      "pages": 242,
-      "isbn": "9798188933364",
-      "score": 46,
+      "published": "2026-07-30",
+      "publisher": "Palgrave Macmillan",
+      "pages": 229,
+      "isbn": "9783032284075",
+      "score": 69,
       "status": "reject",
       "themes": [
-        "心理与自我改变",
-        "AI 与技术社会",
-        "系统、学习与复杂性"
+        "AI",
+        "哲学"
       ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45906278W"
+      "reason": "电子版 2026 年 7 月已出，纸本排期 2027 年 2 月；不算 10 月新书。大框架目前也缺少独立成书评测。",
+      "source_url": "https://link.springer.com/book/9783032284068",
+      "origin": "editorial"
     },
     {
-      "title": "Predicting Injustice; Bias, Ethics, and the Machinery of Predictive Policing",
+      "title": "Beautiful Particulars",
       "authors": [
-        "Dr. Lincoln Eden"
+        "David Weinberger"
       ],
-      "published": "2026",
-      "publisher": "Cipher Press",
-      "pages": 224,
-      "isbn": "9798234073525",
-      "score": 46,
+      "published": "2026-11-03",
+      "publisher": "The MIT Press",
+      "pages": 184,
+      "isbn": "9780262054867",
+      "score": 80,
       "status": "reject",
       "themes": [
-        "权力、经济与政治",
-        "AI 与技术社会",
-        "系统、学习与复杂性"
+        "认识论",
+        "AI"
       ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45267578W"
+      "reason": "MIT Press 官方上市日为 11 月 3 日，尚未到 10 月；保留作下月重新核验，不提前假作本月出版。",
+      "source_url": "https://mitpress.mit.edu/9780262054867/beautiful-particulars/",
+      "origin": "editorial"
     },
     {
-      "title": "Progress",
+      "title": "Boom or Doom",
       "authors": [
-        "Samuel Miller McDonald"
+        "Paul Thagard"
       ],
-      "published": "2026",
-      "publisher": "HarperCollins Publishers Limited",
-      "pages": 428,
-      "isbn": "9781250278326",
-      "score": 43,
+      "published": "2027-02-02",
+      "publisher": "The MIT Press",
+      "pages": 296,
+      "isbn": "9780262057141",
+      "score": 76,
       "status": "reject",
       "themes": [
-        "权力、经济与政治",
-        "系统、学习与复杂性"
-      ],
-      "reason": "可核验的简介、目录或样章信息不足，暂不据此做深度推荐。",
-      "source_url": "https://openlibrary.org/works/OL25801540W"
-    },
-    {
-      "title": "Mapping Experiences",
-      "authors": [
-        "James Kalbach"
-      ],
-      "published": "2026",
-      "publisher": "O'Reilly Media, Incorporated",
-      "pages": 425,
-      "isbn": "9781492076636",
-      "score": 37,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变",
-        "权力、经济与政治",
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL17628217W"
-    },
-    {
-      "title": "Service Systems Engineering and Management",
-      "authors": [
-        "A. Ravi Ravindran",
-        "Paul M. Griffin",
-        "Vittaldas V. Prabhu"
-      ],
-      "published": "2026",
-      "publisher": "Taylor & Francis Group",
-      "pages": 578,
-      "isbn": "9780367781323",
-      "score": 37,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变",
-        "权力、经济与政治",
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL21339896W"
-    },
-    {
-      "title": "Handbook of research methods in developmental science",
-      "authors": [
-        "Douglas M. Teti"
-      ],
-      "published": "2026",
-      "publisher": "Blackwell Pub.",
-      "pages": 627,
-      "isbn": "9781119880844",
-      "score": 29,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL18383327W"
-    },
-    {
-      "title": "Artificial Intelligence Ethics",
-      "authors": [
-        "Georgios Dimitropoulos"
-      ],
-      "published": "2026",
-      "publisher": "Elgar Publishing Limited, Edward",
-      "pages": 288,
-      "isbn": "9781035340132",
-      "score": 27,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变",
-        "AI 与技术社会",
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45782829W"
-    },
-    {
-      "title": "Loose Leaf Organizational Behavior : Emerging Knowledge. Global Reality",
-      "authors": [
-        "Steven McShane",
-        "Mary Ann Von Glinow"
-      ],
-      "published": "2026",
-      "publisher": "McGraw-Hill Education",
-      "pages": 688,
-      "isbn": "9781265596231",
-      "score": 27,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变",
-        "权力、经济与政治",
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45151760W"
-    },
-    {
-      "title": "Economy of Survival : Volume I",
-      "authors": [
-        "Sahil Kathuria"
-      ],
-      "published": "2026",
-      "publisher": "SK Scholarly Works",
-      "pages": 211,
-      "isbn": "9798994927205",
-      "score": 22,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变",
-        "权力、经济与政治"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45152680W"
-    },
-    {
-      "title": "Elevating Next Generation Genomic Science and Technology Using Machine Learning in the Healthcare Industry",
-      "authors": [
-        "Roohi Sille; Tanupriya"
-      ],
-      "published": "2026",
-      "publisher": "Bentham Science Publishers",
-      "pages": 232,
-      "isbn": "9798898815509",
-      "score": 21,
-      "status": "reject",
-      "themes": [
-        "AI 与技术社会",
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45788401W"
-    },
-    {
-      "title": "Emerging Trends in Machine Learning, Data Science, and Internet of Things (Part 1)",
-      "authors": [
-        "Manoj Kumar; Sachin"
-      ],
-      "published": "2026",
-      "publisher": "Bentham Science Publishers",
-      "pages": 280,
-      "isbn": "9798898814731",
-      "score": 21,
-      "status": "reject",
-      "themes": [
-        "AI 与技术社会",
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45788396W"
-    },
-    {
-      "title": "Business Analytics, Data Analytics, Machine Learning, Python Programming, and More Essentials You Always Wanted to Know - a Comprehensive Guide to Data Science, AI, and Business Success",
-      "authors": [
-        "Vibrant Publishers"
-      ],
-      "published": "2026",
-      "publisher": "Vibrant Publishers",
-      "pages": 0,
-      "isbn": "9781636517155",
-      "score": 18,
-      "status": "reject",
-      "themes": [
-        "AI 与技术社会",
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45154188W"
-    },
-    {
-      "title": "Digital Consumer Behavior & Marketing Psychology Essentials",
-      "authors": [
-        "Vibrant Publishers"
-      ],
-      "published": "2026",
-      "publisher": "Vibrant Publishers",
-      "pages": 0,
-      "isbn": "9781636517179",
-      "score": 18,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变",
-        "AI 与技术社会"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45154029W"
-    },
-    {
-      "title": "Eroe Del Machine Learning",
-      "authors": [
-        "Cuantum Technologies"
-      ],
-      "published": "2026",
-      "publisher": "Staten House",
-      "pages": 0,
-      "isbn": "9798902437048",
-      "score": 18,
-      "status": "reject",
-      "themes": [
-        "AI 与技术社会",
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45155174W"
-    },
-    {
-      "title": "Errant Intelligence",
-      "authors": [
-        "Clemens Apprich"
-      ],
-      "published": "2026",
-      "publisher": "Taylor & Francis Group",
-      "pages": 172,
-      "isbn": "9781041175032",
-      "score": 18,
-      "status": "reject",
-      "themes": [
-        "AI 与技术社会",
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45148506W"
-    },
-    {
-      "title": "Discover! MS US Culture & History to 1865 Blended Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972364444",
-      "score": 17,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45154674W"
-    },
-    {
-      "title": "Psychology and Economics of Dentistry",
-      "authors": [
-        "Soheil Khodadadi"
-      ],
-      "published": "2026",
-      "publisher": "DDS Private Capital LLC",
-      "pages": 0,
-      "isbn": "9798996145928",
-      "score": 17,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变",
-        "权力、经济与政治"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45617162W"
-    },
-    {
-      "title": "What Should I Do?",
-      "authors": [
-        "Cooley Pooley"
-      ],
-      "published": "2026",
-      "publisher": "Ms. Cooley Pooley Publications",
-      "pages": 0,
-      "isbn": "9798995274957",
-      "score": 17,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变",
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45614006W"
-    },
-    {
-      "title": "The Meaning of Life",
-      "authors": [
-        "Robert Maxwell"
-      ],
-      "published": "2026",
-      "publisher": "Authors' Tranquility Press",
-      "pages": 0,
-      "isbn": "9798952034266",
-      "score": 16,
-      "status": "reject",
-      "themes": [
-        "哲学、存在与关系"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45926236W"
-    },
-    {
-      "title": "2nd Grade Social Studies Complete Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972583166",
-      "score": 15,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45157480W"
-    },
-    {
-      "title": "Impacts of FinTech, Alternative Funding Sources, and Behavioral Economics on Startup Growth",
-      "authors": [
-        "Naima Bentouir",
-        "Afef Khalil",
-        "Arsalan Hussain",
-        "Akinyo Ola"
-      ],
-      "published": "2026",
-      "publisher": "IGI Global Scientific Publishing",
-      "pages": 0,
-      "isbn": "9798337395746",
-      "score": 15,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变",
-        "权力、经济与政治"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45922818W"
-    },
-    {
-      "title": "Systems Thinking",
-      "authors": [
-        "Markus Schwaninger",
-        "Angela Espinosa"
-      ],
-      "published": "2026",
-      "publisher": "Elgar Publishing Limited, Edward",
-      "pages": 288,
-      "isbn": "9781035373338",
-      "score": 15,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45910038W"
-    },
-    {
-      "title": "Blind Decisions, Thinking Traps",
-      "authors": [
-        "Max Deshner"
-      ],
-      "published": "2026",
-      "publisher": "ABP Publishing, Limited",
-      "pages": 0,
-      "isbn": "9798894896168",
-      "score": 14,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45616852W"
-    },
-    {
-      "title": "Therapist's Guide to Integrative Therapy : The Yanni Integration Approach",
-      "authors": [
-        "Joseph Yanni"
-      ],
-      "published": "2026",
-      "publisher": "Psychological Services of New York, P.C.",
-      "pages": 0,
-      "isbn": "9798996095421",
-      "score": 14,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45615561W"
-    },
-    {
-      "title": "11th Grade Chemistry Complete Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972364963",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45156577W"
-    },
-    {
-      "title": "12th Grade Physics Complete Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972583029",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45157945W"
-    },
-    {
-      "title": "4th Grade Science Complete Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972583296",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45154918W"
-    },
-    {
-      "title": "5th Grade Science Pace Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972584187",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45155499W"
-    },
-    {
-      "title": "Biology Complete Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972583562",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45156798W"
-    },
-    {
-      "title": "Blended Discover! General Science 1 Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972364574",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45156981W"
-    },
-    {
-      "title": "Blended Discover! Physical Science Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972364611",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45154686W"
-    },
-    {
-      "title": "Discover! Blended Science Grade 1 Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972364512",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45155636W"
-    },
-    {
-      "title": "Political Behavior Workbook + Central Ideas in American Government",
-      "authors": [
-        "UNT Political Science Department",
-        "Jocelyn Evans"
-      ],
-      "published": "2026",
-      "publisher": "Soomo Learning",
-      "pages": 0,
-      "isbn": "9781963859553",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "心理与自我改变",
-        "权力、经济与政治",
-        "系统、学习与复杂性"
-      ],
-      "reason": "触发内容风险信号：workbook。",
-      "source_url": "https://openlibrary.org/works/OL45157767W"
-    },
-    {
-      "title": "Teaching  and Learning Classics at the University Level Vol. 2",
-      "authors": [
-        "Alberto Regagliolo"
-      ],
-      "published": "2026",
-      "publisher": "Vernon Art and Science Inc.",
-      "pages": 0,
-      "isbn": "9798261600893",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45789042W"
-    },
-    {
-      "title": "World Geography Complete Set",
-      "authors": [
-        "Edovate Learning Corp."
-      ],
-      "published": "2026",
-      "publisher": "Edovate Learning Corp.",
-      "pages": 0,
-      "isbn": "9781972583715",
-      "score": 13,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45156793W"
-    },
-    {
-      "title": "My Tongan Coloring and Activity Book",
-      "authors": [
-        "Callum Watson"
-      ],
-      "published": "2026",
-      "publisher": "Godly Game",
-      "pages": 0,
-      "isbn": "9798999800985",
-      "score": 12,
-      "status": "reject",
-      "themes": [
-        "系统、学习与复杂性"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45158170W"
-    },
-    {
-      "title": "New Way of Seeing",
-      "authors": [
-        "Pierce Alexander Marks"
-      ],
-      "published": "2026",
-      "publisher": "Quoir",
-      "pages": 0,
-      "isbn": "9781964252049",
-      "score": 12,
-      "status": "reject",
-      "themes": [
-        "哲学、存在与关系"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL38387455W"
-    },
-    {
-      "title": "Understanding Political Economy",
-      "authors": [
-        "Bob Hancké",
-        "Toon Van Overbeke",
-        "Dustin Voss"
-      ],
-      "published": "2026",
-      "publisher": "Elgar Publishing Limited, Edward",
-      "pages": 160,
-      "isbn": "9781049430836",
-      "score": 12,
-      "status": "reject",
-      "themes": [
-        "权力、经济与政治"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45608885W"
-    },
-    {
-      "title": "When Love Learns the Way Back Home",
-      "authors": [
-        "Nicholas Matyas"
-      ],
-      "published": "2026",
-      "publisher": "Discovery Walkabout",
-      "pages": 0,
-      "isbn": "9798993644462",
-      "score": 12,
-      "status": "reject",
-      "themes": [
-        "哲学、存在与关系"
-      ],
-      "reason": "出版社或内容来源尚未进入可信白名单，需要更多独立证据。",
-      "source_url": "https://openlibrary.org/works/OL45034617W"
-    },
-    {
-      "title": "Beckham Bumblebee Learns Teamwork",
-      "authors": [
-        "Jerry Fleury"
-      ],
-      "published": "2026",
-      "publisher": "images of the soul llc",
-      "pages": 0,
-      "isbn": "9798994574935",
-      "score": 0,
-      "status": "reject",
-      "themes": [],
-      "reason": "与当前阅读画像的交叉不足，暂时没有足够个人相关性。",
-      "source_url": "https://openlibrary.org/works/OL45035231W"
-    },
-    {
-      "title": "Precision Medicine",
-      "authors": [
-        "Prasad Lokulwar; Basant"
-      ],
-      "published": "2026",
-      "publisher": "Bentham Science Publishers",
-      "pages": 270,
-      "isbn": "9798898814793",
-      "score": 0,
-      "status": "reject",
-      "themes": [],
-      "reason": "与当前阅读画像的交叉不足，暂时没有足够个人相关性。",
-      "source_url": "https://openlibrary.org/works/OL45788387W"
-    },
-    {
-      "title": "Precision Medicine",
-      "authors": [
-        "Prasad Lokulwar",
-        "Basant Kumar Verma",
-        "Mitu Sehgal"
-      ],
-      "published": "2026",
-      "publisher": "Bentham Science Publishers",
-      "pages": 270,
-      "isbn": "9798898814779",
-      "score": 0,
-      "status": "reject",
-      "themes": [],
-      "reason": "与当前阅读画像的交叉不足，暂时没有足够个人相关性。",
-      "source_url": "https://openlibrary.org/works/OL45788391W"
-    },
-    {
-      "title": "Professor Prostate's Guide to Taking the Fear and Confusion Out of Metastatic Prostate Cancer and Helping You Live Well with Confidence and Clarity :",
-      "authors": [
-        "Harvey Hyman  JD LPCC"
-      ],
-      "published": "2026",
-      "publisher": "Balboa Press",
-      "pages": 0,
-      "isbn": "9798765269800",
-      "score": 0,
-      "status": "reject",
-      "themes": [],
-      "reason": "与当前阅读画像的交叉不足，暂时没有足够个人相关性。",
-      "source_url": "https://openlibrary.org/works/OL45615414W"
+        "AI",
+        "风险"
+      ],
+      "reason": "MIT Press 官方日期是 2027 年 2 月，超出 10 月新书窗口。",
+      "source_url": "https://mitpress.mit.edu/9780262057141/boom-or-doom/",
+      "origin": "editorial"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T05:48:12+00:00",
-  "status": "held_by_quality_gate",
-  "scanned": 45,
-  "qualified": 0,
-  "required": 2,
-  "message": "本月合格书目不足，已保留上一期，避免为了更新而降低质量。"
+  "generated_at": "2026-10-12T12:27:11Z",
+  "status": "editorial-verified",
+  "issue": "2026-10",
+  "manual_candidates": 9,
+  "editorial_selected": 2,
+  "message": "10 月人工核验 9 本候选，选出 2 本；Goodthink 仍在预售阶段，American Scoundrel 为 9 月漏选补录。"
 }
