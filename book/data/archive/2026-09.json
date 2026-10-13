@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "issue": "2026-09",
+  "generated_at": "2026-10-13T09:00:00+08:00",
+  "status": "editorial-verified",
+  "backfilled": true,
+  "publication_cutoff": "2026-09-30",
+  "scanned": 5,
+  "selected_count": 2,
+  "headline": "2026 年 9 月 · 身体、意识与有限的人生（补录）",
+  "editor_note": "本期于 2026 年 10 月 13 日补录，不冒充 9 月当时已发布的月报。人工重新核验 5 本，入选 2 本；限定纸书及电子版均在 9 月底前已发行，电子版链接的当前可用性于补录日核验。1 本近期新书、1 本深度好书，不与 10 月推荐重复。均为英文正版电子版，支付和阅读受账号地区限制；评分是编辑判断，不代表已逐页通读全书。",
+  "reading_policy": {"require_published": true, "require_verified_ebook": true, "recent_window_days": 150},
+  "collections": [
+    {"id": "new", "label": "近期新书", "description": "截至 9 月底已出版的近期新书，电子版已发行。"},
+    {"id": "backlist", "label": "深度好书 · 可读电子版", "description": "不限年份，以思想增量、个人匹配与可读性筛选。"}
+  ],
+  "books": [
+    {
+      "title": "Natural Intelligence & the Logic of Consciousness",
+      "subtitle": "",
+      "authors": ["Antonio Damasio"],
+      "published": "2026-09-15",
+      "publisher": "Pantheon",
+      "pages": 256,
+      "isbn": "9798217207497",
+      "score": 88,
+      "category": "身体、意识与 AI",
+      "theme": "mind",
+      "collection": "new",
+      "cover": "https://images3.penguinrandomhouse.com/cover/9798217207497",
+      "thesis": "Damasio 将意识的根基放在生命体维持自身的身体调节与感受，而不只看抽象计算能力。这会挑战一个常见假设：会推理、会生成语言的系统，就必然具有人的主观体验。",
+      "fit": "连接你的心理、认知、主动推理和 AI 兴趣：情绪与身体信号不一定是理性的敌人，也可能是决策的底层条件。适合用来反思自己如何理解智能、感受和行动。",
+      "evidence": "Pantheon 提供正式版本与样章，Kobo 列出已发行 EPUB；Kirkus 的独立评述确认它围绕身体调节与意识展开论证。作者的理论有长期研究背景，但资历本身不能替代对具体主张的检验。",
+      "caveat": "这是有争议的意识理论，不是学界定论；不能据此断言所有 AI 都不可能有意识。与作者旧作存在连续性，熟悉其理论的读者可能觉得增量有限。评分已低于旧草稿，避免把宏大理论等同于已被证实。",
+      "sources": [
+        {"label": "Pantheon 官方版本、介绍与试读", "url": "https://www.penguinrandomhouse.com/books/825161/natural-intelligence-and-the-logic-of-consciousness-by-antonio-damasio/"},
+        {"label": "Kirkus 独立书评", "url": "https://www.kirkusreviews.com/book-reviews/antonio-damasio/natural-intelligence-the-logic-of-consciousness/"},
+        {"label": "出版社电子版目录", "url": "https://penguinrandomhousehighereducation.com/book/?isbn=9798217207558"}
+      ],
+      "ebook_access": {
+        "status": "available",
+        "published": "2026-09-15",
+        "checked_at": "2026-10-13",
+        "isbn": "9798217207558",
+        "language": "English",
+        "format": "EPUB 3 · Adobe DRM",
+        "note": "Kobo 提供试读和购买入口；使用官方 App 或兼容阅读器。账号地区和支付方式可能影响购买，未验证中国大陆账号实际结账。",
+        "links": [
+          {"label": "Kobo 正版电子版 · 试读 / 购买", "url": "https://www.kobo.com/us/en/ebook/natural-intelligence-the-logic-of-consciousness"},
+          {"label": "出版社电子版信息", "url": "https://penguinrandomhousehighereducation.com/book/?isbn=9798217207558"}
+        ]
+      }
+    },
+    {
+      "title": "Meditations for Mortals",
+      "subtitle": "Four Weeks to Embrace Your Limitations and Make Time for What Counts",
+      "authors": ["Oliver Burkeman"],
+      "published": "2024-10-08",
+      "publisher": "Farrar, Straus and Giroux",
+      "pages": 208,
+      "isbn": "9780374611996",
+      "score": 86,
+      "category": "有限性、自我改变与人生",
+      "theme": "mind",
+      "collection": "backlist",
+      "cover": "",
+      "thesis": "把自我改变的起点从“先成为完美的人”改成“在不完美的条件下做一件重要的事”。以四周短篇练习让读者面对有限时间、不确定性与不可消除的问题，而不是等待一切准备好后才开始生活。",
+      "fit": "你的书单已有《四千周》相关兴趣，也关注允许情绪发生、边界感和自我成长；这本延续 Burkeman 的有限性主题，更适合作为日常行动实验。它提供对显化式全能控制承诺的温和反证：改变不需要假装能控制一切。",
+      "evidence": "Macmillan 提供 208 页正式版与原文试读，Kobo 核实英文电子版发行日期和 DRM 格式；Kirkus 独立评论讨论了其 28 篇练习结构。可核验的是文字内容与论证路径，并非已证明四周练习具有特定治疗效果。",
+      "caveat": "主要是哲学与实践建议，不是临床干预证据。与 Four Thousand Weeks 有思想重叠，若已读过且能落实旧书，新意可能不足；经济压力与不平等也不能单靠接受心态解决。不把书名的“四周”解释为保证改变的期限。",
+      "sources": [
+        {"label": "Macmillan 正式版本与原文试读", "url": "https://academic.macmillan.com/academictrade/9780374611996/meditationsformortals/"},
+        {"label": "Kirkus 独立书评", "url": "https://www.kirkusreviews.com/book-reviews/oliver-burkeman/meditations-for-mortals/"},
+        {"label": "作者介绍与阅读方式", "url": "https://www.oliverburkeman.com/meditationsformortals"}
+      ],
+      "ebook_access": {
+        "status": "available",
+        "published": "2024-10-08",
+        "checked_at": "2026-10-13",
+        "isbn": "9780374612009",
+        "language": "English",
+        "format": "EPUB 3 · Adobe DRM",
+        "note": "所列为美国英文版，纸书 208 页；电子阅读页数随设备变化。官方试读免费，整本电子书付费，账号地区可能影响结账。",
+        "links": [
+          {"label": "Kobo 正版电子版 · 试读 / 购买", "url": "https://es.kobo.com/us/en/ebook/meditations-for-mortals"},
+          {"label": "出版社免费原文试读", "url": "https://academic.macmillan.com/academictrade/9780374611996/meditationsformortals/"}
+        ]
+      }
+    }
+  ],
+  "watchlist": [],
+  "rejected_summary": {
+    "count": 3,
+    "reasons": ["只在 9 月底前已发行的书中补录，不将未来预售填进历史推荐。", "出版社背书不能替代独立成书评述；理论框架的宏大不等于证据充分。"],
+    "examples": [
+      {"title": "Design for Entropy", "reason": "旧草稿主要依赖出版社与同一理论圈背书，独立成书评测不足；不把主动推理框架当成已验证设计定律。"},
+      {"title": "The Player and the Played", "reason": "旧草稿援引相关研究，但研究不能自动验证整本书更大的政治因果模型；本次补录未取得足够独立成书评述。"},
+      {"title": "AI Native", "reason": "强效率和组织变革承诺尚缺独立案例审计，未优先于本期两本。"}
+    ]
+  }
+}

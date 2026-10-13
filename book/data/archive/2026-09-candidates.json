@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "issue": "2026-09",
+  "generated_at": "2026-10-13T09:00:00+08:00",
+  "method": "10 月补录，人工复核 5 本；非重新进行全网自动扫描。发行截止 9 月底，链接于补录日核验。",
+  "scanned": 5,
+  "candidates": [
+    {"title": "Natural Intelligence & the Logic of Consciousness", "authors": ["Antonio Damasio"], "isbn": "9798217207497", "published": "2026-09-15", "score": 88, "status": "recommend", "origin": "editorial", "collection": "new", "themes": ["身体、意识与 AI"], "reason": "9 月 15 日纸书与电子版均发行；出版社与 Kobo 版本一致，Kirkus 提供独立成书评述。保留意识理论争议。", "source_url": "https://www.kirkusreviews.com/book-reviews/antonio-damasio/natural-intelligence-the-logic-of-consciousness/"},
+    {"title": "Meditations for Mortals", "authors": ["Oliver Burkeman"], "isbn": "9780374611996", "published": "2024-10-08", "score": 86, "status": "recommend", "origin": "editorial", "collection": "backlist", "themes": ["有限性与自我改变"], "reason": "已出版且有正版英文 EPUB、原文试读和独立书评；适合将有限性观点转为行动，不当作治疗或四周改变保证。", "source_url": "https://www.kirkusreviews.com/book-reviews/oliver-burkeman/meditations-for-mortals/"},
+    {"title": "Design for Entropy", "authors": ["Luca M. Possati"], "isbn": "9780262056267", "score": 78, "status": "reject", "origin": "editorial", "themes": ["主动推理与设计"], "reason": "独立成书评测不足，同一理论圈背书与相关研究不能验证整本书的通用设计框架。", "source_url": "https://mitpress.mit.edu/9780262056267/design-for-entropy/"},
+    {"title": "The Player and the Played", "authors": ["Max Haiven"], "isbn": "9780262056045", "score": 77, "status": "reject", "origin": "editorial", "themes": ["游戏、资本与政治"], "reason": "原草稿的相关经验研究不等于对整本书政治因果模型的独立验证；本次未取得充分成书评述。", "source_url": "https://mitpress.mit.edu/9780262056045/the-player-and-the-played/"},
+    {"title": "AI Native", "authors": ["Kai-Fu Lee"], "isbn": "9798217400430", "score": 75, "status": "reject", "origin": "editorial", "themes": ["AI 与组织"], "reason": "强营销承诺缺乏独立案例审计和失败样本，本次不入选。", "source_url": "https://www.penguinrandomhouse.com/books/854461/ai-native-by-kai-fu-lee/"}
+  ]
+}

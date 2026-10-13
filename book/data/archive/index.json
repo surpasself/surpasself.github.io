@@ -10,6 +10,14 @@
       "current": true
     },
     {
+      "issue": "2026-09",
+      "headline": "2026 年 9 月 · 身体、意识与有限的人生（补录）",
+      "selected_count": 2,
+      "url": "./data/archive/2026-09.json",
+      "candidate_url": "./data/archive/2026-09-candidates.json",
+      "current": false
+    },
+    {
       "issue": "2026-08",
       "headline": "2026 年 8 月 · 4 本真正值得占用注意力的新书",
       "selected_count": 4,
