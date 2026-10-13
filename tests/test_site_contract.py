@@ -28,6 +28,23 @@ class SiteContractTests(unittest.TestCase):
             if book["collection"] == "new":
                 self.assertLessEqual((verified_on - date.fromisoformat(book["published"])).days, policy["recent_window_days"])
 
+    def test_september_backfill_preserves_current_and_has_readable_books(self):
+        history = json.loads(Path("book/data/archive/index.json").read_text(encoding="utf-8"))
+        self.assertEqual([item["issue"] for item in history["issues"]], ["2026-10", "2026-09", "2026-08"])
+        entry = history["issues"][1]
+        self.assertFalse(entry["current"])
+        report = json.loads(Path("book").joinpath(entry["url"]).read_text(encoding="utf-8"))
+        audit = json.loads(Path("book").joinpath(entry["candidate_url"]).read_text(encoding="utf-8"))
+        self.assertTrue(report["backfilled"])
+        self.assertEqual(report["selected_count"], len(report["books"]))
+        self.assertEqual(report["scanned"], len(audit["candidates"]))
+        cutoff = date.fromisoformat(report["publication_cutoff"])
+        checked = date.fromisoformat(report["generated_at"][:10])
+        for book in report["books"]:
+            self.assertLessEqual(date.fromisoformat(book["published"]), cutoff)
+            self.assertLessEqual(date.fromisoformat(book["ebook_access"]["published"]), cutoff)
+            self.assertEqual(reading_gate_issues(book, report["reading_policy"], today=checked), [])
+
     def test_page_assets_exist(self):
         for path in (
             "book/index.html",
