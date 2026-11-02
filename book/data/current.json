@@ -1,201 +1,12 @@
 {
   "schema_version": 1,
-  "issue": "2026-10",
-  "generated_at": "2026-10-12T14:00:00Z",
+  "issue": "2026-11",
+  "generated_at": "2026-11-02T09:30:00+08:00",
   "status": "editorial-verified",
-  "scanned": 11,
-  "selected_count": 3,
-  "headline": "2026 年 10 月 · 新书与深度好书，现在就能读",
-  "editor_note": "本期人工核验 11 本，入选 3 本：1 本近期新书、2 本深度好书。两组都必须已出版，并核实至少一个正版电子版渠道。新书按近 150 天首版筛选；深度好书不限年份，以思想增量和与你的匹配度为准。核验截至 10 月 12 日，电子版均为英文；能否付款与阅读取决于你的账号地区。分数是编辑判断，不表示已逐页验证全书。",
-  "books": [
-    {
-      "title": "American Scoundrel",
-      "subtitle": "Roy Cohn's Dark Journey from Joe McCarthy to Donald Trump",
-      "authors": [
-        "Kai Bird",
-        "Susan Goldmark"
-      ],
-      "published": "2026-09-01",
-      "publisher": "Scribner",
-      "pages": 528,
-      "isbn": "9781668031575",
-      "score": 90,
-      "category": "权力与政治人物",
-      "theme": "power",
-      "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781668031575/american-scoundrel-9781668031575_hr.jpg",
-      "thesis": "这部传记把 Roy Cohn 从麦卡锡时代的律师、纽约权势网络人物到特朗普导师的路径连起来。核心不是把一切政治变化归因于一个人，而是观察法律诉讼、媒体曝光、人脉交换和攻击对手如何组合成可复制的权力策略。",
-      "fit": "你特别提到喜欢读特朗普相关书，也偏好制度、博弈和政治人物的机制性解释。它提供历史纵深，让“特朗普式作风”从性格叙事变成可以分析的组织与媒体技巧。",
-      "evidence": "Scribner 的当前书目核实 2026 年 9 月 1 日出版、528 页及电子版 ISBN。美联社报道其使用政府文件、档案和数十次采访；Kirkus 的独立书评支持其报道深度。The Atlantic 提供对人物解释与论证范围的批评，可与作者结论对照。",
-      "caveat": "这是 9 月首发的近期新书，非 10 月首发。作者对 Cohn 的道德评价鲜明；The Atlantic 指出书中过多私人丑闻，以及“恶劣个体塑造当代政治”的解释可能低估时代制度和右翼运动。阅读时应区分档案事实、被访者记忆与作者推断。",
-      "sources": [
-        {
-          "label": "Scribner 书目、电子书与购买",
-          "url": "https://www.simonandschuster.com/books/American-Scoundrel/Kai-Bird/9781668031575"
-        },
-        {
-          "label": "美联社：档案与采访来源",
-          "url": "https://apnews.com/article/f9eb2443cbb68e664bee4487e3973df0"
-        },
-        {
-          "label": "Kirkus 独立书评",
-          "url": "https://www.kirkusreviews.com/book-reviews/kai-bird/american-scoundrel-2/"
-        },
-        {
-          "label": "The Atlantic 的批评性书评",
-          "url": "https://www.theatlantic.com/magazine/2026/10/roy-cohn-american-scoundrel-review/688351/"
-        }
-      ],
-      "collection": "new",
-      "ebook_access": {
-        "status": "available",
-        "published": "2026-09-01",
-        "checked_at": "2026-10-12",
-        "isbn": "9781668031599",
-        "language": "英文",
-        "format": "正版 eBook",
-        "note": "已核实发行和付费电子版页面。出版社直购需用 Simon & Schuster Books App 阅读；其他零售商、地区与支付方式以页面为准。",
-        "links": [
-          {
-            "label": "出版社电子版 / 购买",
-            "url": "https://www.simonandschuster.com/books/American-Scoundrel/Kai-Bird/9781668031599"
-          }
-        ]
-      }
-    },
-    {
-      "title": "How Minds Change",
-      "subtitle": "The Surprising Science of Belief, Opinion, and Persuasion",
-      "authors": [
-        "David McRaney"
-      ],
-      "published": "2022-06-21",
-      "publisher": "Portfolio",
-      "pages": 352,
-      "isbn": "9780593190296",
-      "score": 89,
-      "collection": "backlist",
-      "category": "认知与关系 · 信念改变",
-      "theme": "mind",
-      "cover": "https://images2.penguinrandomhouse.com/cover/9780593190296",
-      "thesis": "把更多事实塞给一个人，并不总能改变他的信念：观点还承担群体归属和自我身份的功能。McRaney 通过访谈与研究解释，尊重、追问信念形成过程和让对方自己检查理由，如何创造重新判断的条件。",
-      "fit": "连接你对慢思考、偏见、关系和心理改变的兴趣。它把“识别认知偏差”推进到“在真实分歧中怎样一起检查理由”，也能让你反过来检验自己的确定感，而不只研究怎样说服别人。",
-      "evidence": "Portfolio 与 Kobo 核实 2022 年出版、352 页和已发行英文 EPUB。Kirkus、Publishers Weekly 分别有独立书评。书中涉及的深度对话路线还可对照 Broockman 与 Kalla 的 2016 年 Science 随机实地实验；该研究支持特定情境中的效果，不证明全书每项主张。",
-      "caveat": "这是科学记者的综合叙事，不是系统综述或万能说服术。个案可能偏向成功故事；特定政治态度实验不能外推到所有信念、所有文化或持续关系。把方法先用于自己的理由，避免把倾听变成隐蔽操控。",
-      "ebook_access": {
-        "status": "available",
-        "published": "2022-06-21",
-        "checked_at": "2026-10-12",
-        "isbn": "9780593190302",
-        "language": "英文",
-        "format": "EPUB 3 · Adobe DRM",
-        "note": "Kobo 明确列出英文电子版、发行日期与试读 / 购买入口。通常在 Kobo App 或兼容设备阅读；商店地区会影响购买。",
-        "links": [
-          {
-            "label": "Kobo 电子版 / 试读 / 购买",
-            "url": "https://www.kobo.com/us/en/ebook/how-minds-change-2"
-          }
-        ]
-      },
-      "sources": [
-        {
-          "label": "Portfolio 官方书目与电子版",
-          "url": "https://www.penguinrandomhouse.com/books/639563/how-minds-change-by-david-mcraney/"
-        },
-        {
-          "label": "Kirkus 独立书评",
-          "url": "https://www.kirkusreviews.com/book-reviews/david-mcraney/how-minds-change/"
-        },
-        {
-          "label": "Publishers Weekly 独立书评",
-          "url": "https://www.publishersweekly.com/9780593190296"
-        },
-        {
-          "label": "Science 实地实验（PubMed）",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/27124458/"
-        }
-      ]
-    },
-    {
-      "title": "Thinking in Systems",
-      "subtitle": "A Primer",
-      "authors": [
-        "Donella Meadows"
-      ],
-      "published": "2008-12-05",
-      "publisher": "Chelsea Green Publishing",
-      "pages": 240,
-      "isbn": "9781603580557",
-      "score": 92,
-      "collection": "backlist",
-      "category": "系统思维 · 改变的杠杆",
-      "theme": "systems",
-      "cover": "https://images2.penguinrandomhouse.com/cover/9781603580557",
-      "thesis": "反复出现的问题，往往由存量、流量、反馈、延迟和目标共同产生。只修一个局部可能把问题转移甚至放大；找到规则、信息流和目标的改变空间，常比不断加强个人意志更有用。",
-      "fit": "连接你读过的复杂经济学、主动推理和 AI / 工程书，也给自我改变提供更可检验的路径：把习惯、项目或关系画成反馈结构，再找能改变持续结果的环节。它特别适合挑战“只要更努力就能解决”的直觉。",
-      "evidence": "Chelsea Green 与 Penguin Random House 核实 240 页及纸书 / 电子版日期，Kobo 核实英文 EPUB 和电子版 ISBN。作者项目网站公开“杠杆点”原文供检查核心思想；The New Yorker 的独立讨论展示书中反馈、延迟与局部目标的解释价值。",
-      "caveat": "它是系统动力学传统的入门书，不覆盖全部复杂系统理论。因果回路图只能提出假设，不能替代测量和因果识别；作者也明确提醒杠杆点不是通用配方。个人关系与政治问题里，还应考虑权力、价值冲突和无法量化的条件。",
-      "ebook_access": {
-        "status": "available",
-        "published": "2008-12-03",
-        "checked_at": "2026-10-12",
-        "isbn": "9781603581486",
-        "language": "英文",
-        "format": "EPUB 3 · Adobe DRM",
-        "note": "Kobo 与发行商均确认电子版已发行。可在 Kobo App 或兼容设备阅读；作者公开的“杠杆点”文章可先免费读，但不是全书。",
-        "links": [
-          {
-            "label": "Kobo 电子版 / 购买",
-            "url": "https://www.kobo.com/us/en/ebook/thinking-in-systems-2"
-          },
-          {
-            "label": "作者授权文章 · 免费读",
-            "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
-          }
-        ]
-      },
-      "sources": [
-        {
-          "label": "Chelsea Green 官方书目",
-          "url": "https://www.chelseagreen.com/product/thinking-in-systems/"
-        },
-        {
-          "label": "发行商核实电子版日期",
-          "url": "https://www.penguinrandomhouse.com/books/801035/thinking-in-systems-by-donella-meadows/"
-        },
-        {
-          "label": "作者原文：杠杆点",
-          "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
-        },
-        {
-          "label": "The New Yorker 独立讨论",
-          "url": "https://www.newyorker.com/culture/open-questions/how-do-you-know-when-a-system-has-failed"
-        }
-      ]
-    }
-  ],
-  "watchlist": [],
-  "rejected_summary": {
-    "count": 8,
-    "reasons": [
-      "尚未出版、发行日无法确认，或未核实可购买的正版电子版",
-      "只有宣传资料，缺少足以支持思想增量的独立评测",
-      "畅销或强主张不能抵消因果链争议；不因旧书年份而自动淘汰"
-    ],
-    "examples": [
-      {
-        "title": "Goodthink",
-        "reason": "10 月 12 日核验时尚未发行；不能用预订页替代可读电子版，移出本期推荐。"
-      },
-      {
-        "title": "Why Don’t You Understand Me?",
-        "reason": "10 月 27 日才发行，预售不符合“现在能读”的门槛。"
-      },
-      {
-        "title": "The New Dark Ages",
-        "reason": "独立评论对屏幕、阅读能力和民主衰退之间的因果链有明显分歧，暂不优先于本期三本。"
-      }
-    ]
-  },
+  "scanned": 5,
+  "selected_count": 2,
+  "headline": "2026 年 11 月 · 看清技术的代价，也看清自己的确信",
+  "editor_note": "本期 2 本：从数据中心的现实代价，到个人判断中的自我辩护。",
   "reading_policy": {
     "require_published": true,
     "require_verified_ebook": true,
@@ -205,12 +16,143 @@
     {
       "id": "new",
       "label": "近期新书",
-      "description": "近 150 天出版的新书，已有正版电子版。"
+      "description": ""
     },
     {
       "id": "backlist",
-      "label": "深度好书 · 可读电子版",
-      "description": "不以年份限制价值：已出版、有正版电子版，值得重新理解世界。"
+      "label": "深度好书",
+      "description": ""
     }
-  ]
+  ],
+  "books": [
+    {
+      "title": "Hyperscale",
+      "subtitle": "The Ambition and Excess of Big Tech's Data Empires",
+      "authors": [
+        "Paris Marx"
+      ],
+      "published": "2026-10-20",
+      "publisher": "Riverhead Books",
+      "pages": 320,
+      "isbn": "9798217048526",
+      "score": 88,
+      "category": "AI、基础设施与权力",
+      "theme": "ai",
+      "collection": "new",
+      "cover": "https://images3.penguinrandomhouse.com/cover/9798217048526",
+      "thesis": "云端智能始终依赖地面的电网、水、土地和政治协商。Marx 将数据中心扩张当成资源与治理问题：技术收益由谁取得，基础设施成本又由谁承担？",
+      "fit": "连接你的 AI 工程、复杂经济学与权力兴趣。它补上模型性能之外的视角：一个技术方案即便在局部提高效率，是否仍会因规模扩张、资源约束或议价权产生另一种结果？",
+      "evidence": "Riverhead 核实版本和日期，作者已发布上市说明。Kirkus 独立书评讨论其地方调查和治理案例，同时将其定位为带有倡议立场的技术新闻作品。Cuyahoga County Public Library 的 OverDrive 目录列有已发行全书电子版及预约入口。",
+      "caveat": "立场鲜明的批判性报道，不是全面的成本收益模型。地方损害案例不能单独推导出所有 AI 应用都不值得建设；应区分当前用量、未来预测、反事实收益及各地能源结构。发行较近，长期事实核查可能修正个别判断。",
+      "sources": [
+        {
+          "label": "Riverhead 官方电子版与介绍",
+          "url": "https://www.penguinrandomhouse.com/books/797020/hyperscale-by-paris-marx/9798217048540/"
+        },
+        {
+          "label": "Kirkus 独立书评",
+          "url": "https://www.kirkusreviews.com/book-reviews/paris-marx/hyperscale/"
+        },
+        {
+          "label": "作者上市说明",
+          "url": "https://disconnect.blog/hyperscale-has-arrived/"
+        }
+      ],
+      "ebook_access": {
+        "status": "available",
+        "published": "2026-10-20",
+        "checked_at": "2026-11-02",
+        "isbn": "9798217048540",
+        "language": "English",
+        "format": "EPUB · Adobe DRM / OverDrive Read",
+        "note": "Cultura 列有即时付费购买；OverDrive 有馆藏但需排队，必须持该馆有效馆证。未测试你的账号结账。部分商店快照仍显示预售，优先使用明确现售或馆藏入口。",
+        "links": [
+          {
+            "label": "Cultura 正版英文电子书 · 付费购买",
+            "url": "https://www.cultura.com/p-hyperscale-the-ambition-and-excess-of-big-tech-s-data-empires-12940093.html"
+          },
+          {
+            "label": "OverDrive 全书 · 有效馆证预约 / 试读",
+            "url": "https://ccpl.overdrive.com/library/inclusive-collections/media/12824679"
+          },
+          {
+            "label": "VitalSource 正版电子书 · 付费购买",
+            "url": "https://www.vitalsource.com/en-ca/products/hyperscale-paris-marx-v9798217048540"
+          }
+        ]
+      }
+    },
+    {
+      "title": "The Scout Mindset",
+      "subtitle": "Why Some People See Things Clearly and Others Don't",
+      "authors": [
+        "Julia Galef"
+      ],
+      "published": "2021-04-13",
+      "publisher": "Portfolio",
+      "pages": 288,
+      "isbn": "9780735217553",
+      "score": 87,
+      "category": "认知、决策与自我诚实",
+      "theme": "mind",
+      "collection": "backlist",
+      "cover": "https://images3.penguinrandomhouse.com/cover/9780735217553",
+      "thesis": "判断失误不只来自不会推理，还来自想保护身份、归属与自尊。Galef 建议将目标从守住立场转为画准地图：记录确信度，主动寻找会改变判断的材料，并把承认错误与自我价值分开。",
+      "fit": "你重视慢思考，也希望得到真实反馈。10 月 How Minds Change 偏向人际信念改变；这本侧重检查自己的动机与确信。适合拿一个真实的研究、职业或关系判断来实践，而不只是再学一张偏差清单。",
+      "evidence": "出版社提供正式电子版与原文试读；Kobo 核实美国版 EPUB、日期和 ISBN。British School of Coaching 有具名书评；Inside Higher Ed 的 Matt Reed 讨论方法时指出个人求真与组织权力之间的张力，提供可直接对照的批评。",
+      "caveat": "不是保证去偏见成功的训练实验。故事不能证明每个方法同样有效；改变身份依附也不只是意志问题。对方有惩罚异议的权力时，公开不确定性可能有真实成本。若你已熟练记录预测、更新概率并寻找反证，思想增量会下降。",
+      "sources": [
+        {
+          "label": "出版社电子版与试读（英国版）",
+          "url": "https://www.hachette.co.uk/titles/julia-galef/the-scout-mindset/9780349427638/"
+        },
+        {
+          "label": "British School of Coaching 具名书评",
+          "url": "https://www.britishschoolofcoaching.com/book-review-scout-mindset-by-julia-galef/"
+        },
+        {
+          "label": "Inside Higher Ed：求真与权力的限制",
+          "url": "https://www.insidehighered.com/blogs/confessions-community-college-dean/scouts-and-power-response-julia-galef"
+        },
+        {
+          "label": "作者全书介绍",
+          "url": "https://juliagalef.com/my-book/"
+        }
+      ],
+      "ebook_access": {
+        "status": "available",
+        "published": "2021-04-13",
+        "checked_at": "2026-11-02",
+        "isbn": "9780735217560",
+        "language": "English",
+        "format": "EPUB 3 · Adobe DRM",
+        "note": "ISBN 为 Kobo 美国版；英国出版社链接是不同 ISBN 的英国版，不混用版本信息。购买需账号与支持的支付方式，地区可能限制销售；试读不是全书。",
+        "links": [
+          {
+            "label": "Kobo 美国版 · 试读 / 购买",
+            "url": "https://www.kobo.com/us/en/ebook/the-scout-mindset-1"
+          }
+        ]
+      }
+    }
+  ],
+  "watchlist": [],
+  "rejected_summary": {
+    "count": 3,
+    "reasons": [],
+    "examples": [
+      {
+        "title": "Goodthink",
+        "reason": "本次电子商店资料仍有预售冲突，独立成书评述不足；不沿用 10 月的未出版理由，也不凭发行日期自动转入推荐。"
+      },
+      {
+        "title": "Beautiful Particulars",
+        "reason": "11 月 3 日发行，晚于本次 11 月 2 日核验日。"
+      },
+      {
+        "title": "The Scout Mindset（Stream Readers 摘要版）",
+        "reason": "检索发现同名独立摘要与原著混列；不使用摘要作为全书获取渠道。"
+      }
+    ]
+  }
 }

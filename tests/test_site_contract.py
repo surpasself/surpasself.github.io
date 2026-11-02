@@ -30,8 +30,8 @@ class SiteContractTests(unittest.TestCase):
 
     def test_september_backfill_preserves_current_and_has_readable_books(self):
         history = json.loads(Path("book/data/archive/index.json").read_text(encoding="utf-8"))
-        self.assertEqual([item["issue"] for item in history["issues"]], ["2026-10", "2026-09", "2026-08"])
-        entry = history["issues"][1]
+        self.assertEqual([item["issue"] for item in history["issues"]][-3:], ["2026-10", "2026-09", "2026-08"])
+        entry = next(item for item in history["issues"] if item["issue"] == "2026-09")
         self.assertFalse(entry["current"])
         report = json.loads(Path("book").joinpath(entry["url"]).read_text(encoding="utf-8"))
         audit = json.loads(Path("book").joinpath(entry["candidate_url"]).read_text(encoding="utf-8"))
@@ -44,6 +44,25 @@ class SiteContractTests(unittest.TestCase):
             self.assertLessEqual(date.fromisoformat(book["published"]), cutoff)
             self.assertLessEqual(date.fromisoformat(book["ebook_access"]["published"]), cutoff)
             self.assertEqual(reading_gate_issues(book, report["reading_policy"], today=checked), [])
+
+    def test_policy_is_documentation_not_page_sections(self):
+        html = Path("book/index.html").read_text(encoding="utf-8")
+        for marker in ("QUALITY CONTRACT", "YOUR READING DNA", "阅读门槛", 'id="quality-contract"', 'class="profile-section"'):
+            self.assertNotIn(marker, html)
+        self.assertTrue(Path("docs/book-selection-policy.md").is_file())
+        self.assertIn("data-ebook-access", html)
+        self.assertIn("data-caveat", html)
+
+    def test_november_preserves_october_and_all_history_files(self):
+        history = json.loads(Path("book/data/archive/index.json").read_text(encoding="utf-8"))
+        self.assertEqual(history["issues"][0]["issue"], "2026-11")
+        for item in history["issues"]:
+            report = json.loads(Path("book").joinpath(item["url"]).read_text(encoding="utf-8"))
+            self.assertEqual(report["issue"], item["issue"])
+            self.assertEqual(len(report["books"]), item["selected_count"])
+            self.assertTrue(Path("book").joinpath(item["candidate_url"]).is_file())
+        october = json.loads(Path("book/data/archive/2026-10.json").read_text(encoding="utf-8"))
+        self.assertEqual([b["isbn"] for b in october["books"]], ["9781668031575", "9780593190296", "9781603580557"])
 
     def test_page_assets_exist(self):
         for path in (
