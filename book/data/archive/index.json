@@ -2,12 +2,20 @@
   "schema_version": 1,
   "issues": [
     {
-      "issue": "2026-10",
-      "headline": "2026 年 10 月 · 新书与深度好书，现在就能读",
-      "selected_count": 3,
+      "issue": "2026-11",
+      "headline": "2026 年 11 月 · 看清技术的代价，也看清自己的确信",
+      "selected_count": 2,
       "url": "./data/current.json",
       "candidate_url": "./data/candidate-audit.json",
       "current": true
+    },
+    {
+      "issue": "2026-10",
+      "headline": "2026 年 10 月 · 新书与深度好书，现在就能读",
+      "selected_count": 3,
+      "url": "./data/archive/2026-10.json",
+      "candidate_url": "./data/archive/2026-10-candidates.json",
+      "current": false
     },
     {
       "issue": "2026-09",

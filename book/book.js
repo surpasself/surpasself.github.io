@@ -144,9 +144,7 @@ function renderBooks(report) {
     header.className = "collection-heading";
     const title = document.createElement("h2");
     title.textContent = collection.label;
-    const description = document.createElement("p");
-    description.textContent = collection.description;
-    header.append(title, description);
+    header.append(title);
     section.append(header);
     report.books.forEach((book, index) => {
       if (book.collection === collection.id) section.append(renderBook(book, index));
@@ -195,12 +193,6 @@ function renderRejected(summary) {
   section.hidden = false;
   $("[data-rejected-count]").textContent = String(summary.count || 0);
   const body = $("[data-rejected-body]");
-  const list = document.createElement("ul");
-  (summary.reasons || []).forEach((reason) => {
-    const item = document.createElement("li");
-    item.textContent = reason;
-    list.append(item);
-  });
   const examples = document.createElement("div");
   (summary.examples || []).forEach((example) => {
     const item = document.createElement("article");
@@ -218,7 +210,7 @@ function renderRejected(summary) {
   fullAudit.textContent = "查看完整候选清单 →";
   fullAudit.addEventListener("click", openCandidateDialog);
   examples.append(fullAudit);
-  body.replaceChildren(list, examples);
+  body.replaceChildren(examples);
 }
 
 function editorialCandidate(book, status) {
@@ -318,7 +310,7 @@ function renderReport(report) {
   $("[data-selected-count]").textContent = String(report.selected_count ?? report.books.length);
   $("[data-scanned]").textContent = String(report.scanned ?? "—");
   $("[data-headline]").textContent = report.headline;
-  $("[data-editor-note]").textContent = report.editor_note;
+  $("[data-editor-note]").textContent = report.issue === "2026-11" ? report.editor_note : "";
   renderBooks(report);
   renderWatchlist(report.watchlist);
   renderRejected(report.rejected_summary);
